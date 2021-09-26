@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Todo</title>
+</head>
+<body>
+ <header>
+  <h1 class="TaskManagerText">Task Manager</h1>
+</header>
+    <main>
+      <div class="todoContainer">
+         <form class="todoInputBtn">
+           <input type="text" class="todoInput" placeholder="Title">
+           <button class="todoBtn">ADD</button>
+         </form>
+        
+       <div class="todoItem">
+         <ul class="ulDiv">
+           <div class="task">
+              <li>Task 1</li>
+                <div class="btn">
+                  <button class="Task1 editBtn">Edit</button>
+                  <button class="Task1 deleteBtn">Delete</button>
+                </div>
+          </div>
+          <div class="task">
+            <li>Task 2</li>
+              <div class="btn">
+                <button class="Task2 editBtn">Edit</button>
+                <button class="Task2 deleteBtn">Delete</button>
+              </div>
+          </div>
+          <div class="task">
+            <li>Task 3</li>
+              <div class="btn">
+                <button class="Task3 editBtn">Edit</button>
+                <button class="Task3 deleteBtn">Delete</button>
+              </div>
+          </div>
+           </ul>
+       </div>
+      </div>
+    </main>
+   <script src="app.js"></script>
+</body>
+</html>

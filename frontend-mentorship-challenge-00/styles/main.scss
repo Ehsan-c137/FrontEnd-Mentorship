@@ -1,0 +1,114 @@
+html{
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   font-family: 'Roboto' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 0;
+   text-transform: capitalize; 
+   
+   background: url(../images/bg8-2.svg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .TaskManagerText{
+   font-size: 2.5rem;
+   color: #4B44BE;
+   text-shadow: .5rem .5rem 1rem rgb(177, 177, 177);
+ }
+ .todoContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #59c0e8dc;
+   border-radius: .7rem;
+   padding: 2rem;
+   box-shadow: .2rem .2rem 2rem rgba(0, 0, 0, 0.555);
+ }
+ 
+ .task{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+   border-radius: .5rem;
+   background-color: rgba(255, 255, 255, 0.726);
+   margin: .5rem 0;
+  
+ }
+ 
+ .todoInput{
+   font-size: large;
+   width:40rem;
+   height: 1rem;
+   padding: 1.5rem;
+   border-radius: .5rem;
+   outline-color: #4B44BE;
+   border: none;
+   transition: 1s;
+  }
+ .todoInput:focus{
+   padding: 2rem;
+   transition: 1s;
+
+ }
+
+ .todoBtn{
+   font-weight: bold;
+   text-align: center;
+   border: none;
+   border-radius: .4rem;
+   padding: 1rem 1.5rem;
+   margin-left: 0.5rem;
+   background: #5fff9f;
+   cursor: pointer;
+ }
+ 
+ .todoItem ul {
+   display: flex;
+   flex-direction: column;
+   width: 46rem;
+   padding: 1rem;
+   text-align: left;
+   list-style-type: none;
+   font-size: large;
+ } 
+ 
+ .todoItem li{
+   display: flex;
+   align-items: center;
+   padding: 0 1rem;
+   border-radius: 7px;
+   height: 4rem;
+ }
+ 
+ .deleteBtn {
+   
+   border: none;
+   border-radius: .3rem;
+   padding: .5rem .8rem;
+   background: #6FC0DA;
+   color: white;
+   margin-left: .4rem;
+   cursor: pointer;
+ }
+ 
+ .editBtn {
+   border: none;
+   border-radius: .3rem;
+   padding: .5rem .8rem;
+   background: #DA6FA2;
+   color: white;
+   cursor: pointer;
+ }
+ 
