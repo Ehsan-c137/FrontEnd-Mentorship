@@ -1,12 +1,12 @@
 // SELECTORS
 const editBtn = document.querySelector('.editBtn'),
       deleteBtn = document.querySelector('.deleteBtn'),
-      todoBtn = document.querySelector('.todoBtn'),
+      todoAddBtn = document.querySelector('.todoAddBtn'),
       todoList = document.querySelector('.ulDiv'),
       todoInput = document.querySelector('.todoInput');
 // Event listeners 
-todoBtn.addEventListener('click', addTodo);
-
+todoAddBtn.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteItem)
 
 // functions 
 
@@ -35,4 +35,16 @@ function addTodo (event){
    btnDiv.appendChild(deleteBtn);
    // apend todo to list 
    todoList.appendChild(todoDiv);
+   // clear todo input value 
+   todoInput.value = '';
+   // 
+}
+
+function deleteItem (e){
+   const item = e.target;
+   // detele todo
+   if(item.classList[0] === 'deleteBtn'){
+      const todo = item.parentElement.parentElement;
+      todo.remove();
+   }
 }
