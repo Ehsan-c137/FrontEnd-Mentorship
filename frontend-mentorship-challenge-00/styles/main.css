@@ -87,7 +87,7 @@ body {
   transition: 1s;
 }
 
-.todoBtn {
+.todoAddBtn {
   font-weight: bold;
   text-align: center;
   border: none;
