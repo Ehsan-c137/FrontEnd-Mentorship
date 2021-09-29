@@ -80,7 +80,7 @@ input::placeholder {
 }
 
 // FOR IPHONE X 
-@media (max-width:375px) {
+@media screen and (min-width:375px) {
    body{
       background-image: url(../images/iphoneX.jpg);
       
@@ -105,15 +105,13 @@ input::placeholder {
 }
 
 // FOR IPAD 
-@media (max-width:768px) {
+@media screen and (min-width:768px) {
    body{
       background-image: url(../images/ipad.jpg);
       h1{
          font-size: 3rem;
+         color: white;
       }
-   }
-   h1{
-      color: white;
    }
    .accountBtn{
       color: white !important;
@@ -131,5 +129,38 @@ input::placeholder {
    }
    input{
       font-size: 2.6rem;
+   }
+}
+
+// FOR IPAD PRO
+@media screen and (min-width:1024px){
+   body{
+      background-image: url(../images/ipad.jpg);
+      h1{
+         font-size: 3rem;
+         color: white;
+      }
+   }
+
+   .accountBtn{
+      color: white !important;
+   }
+
+   .container{
+      flex-direction: column;
+            
+   .container__checkIn,
+   .container__checkOut{
+         margin-top: 5rem;
+      }
+   }
+   input{
+      font-size: 4.5rem;
+   }
+   button{
+      font-size: 3rem;
+   }
+   .labels{
+      font-size: 5rem;
    }
 }
