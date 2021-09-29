@@ -108,6 +108,7 @@ input {
   border: none;
   background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 
 input::-webkit-input-placeholder {
@@ -134,7 +135,7 @@ input::placeholder {
 }
 
 .btn--primary:hover {
-  background-color: yellow;
+  background-color: #f5b9047c;
 }
 
 @media screen and (min-width: 375px) and (max-width: 375px) {

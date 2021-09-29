@@ -54,6 +54,7 @@ header{
       color: white;
       background: transparent;
       margin: 0 2rem;
+      
       label{
          font-size: 1.8rem;
          margin-bottom: .5rem;
@@ -65,18 +66,19 @@ input{
    border: none;
    background-color: transparent;
    color: white;
-   
+   cursor: pointer;
 }
 input::placeholder {
    color: rgb(187, 187, 187);
 }
+
 .btn--primary{
    padding: 1rem;
    cursor: pointer;
    transition: 1s;
 }
 .btn--primary:hover{
-   background-color: yellow;
+   background-color: #f5b9047c;
 }
 
 
@@ -114,6 +116,7 @@ input::placeholder {
          color: white;
       }
    }
+
    .accountBtn{
       color: white !important;
    }
@@ -128,6 +131,7 @@ input::placeholder {
          margin-top: 5rem;
       }
    }
+   
    input{
       font-size: 2.6rem;
    }
