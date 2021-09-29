@@ -137,7 +137,7 @@ input::placeholder {
   background-color: yellow;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 375px) {
   body {
     background-image: url(../images/iphoneX.jpg);
   }
@@ -159,7 +159,7 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 760px) {
   body {
     background-image: url(../images/ipad.jpg);
   }
@@ -185,7 +185,7 @@ input::placeholder {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) and (max-width: 1025) {
   body {
     background-image: url(../images/ipad.jpg);
   }
