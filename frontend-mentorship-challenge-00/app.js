@@ -5,6 +5,7 @@ const editBtn = document.querySelector('.editBtn'),
       todoList = document.querySelector('.ulDiv'),
       todoInput = document.querySelector('.todoInput'),
       listItem = document.querySelector('.editBtn');
+      
 
 // Event listeners 
 document.addEventListener('DOMContentLoaded', getTodos);
@@ -12,8 +13,13 @@ todoAddBtn.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteItem);
 // listItem.addEventListener('click', editItem);
 
-
 // functions 
+// function whatsValue(){
+// if (todoInput.value.length < 1 ) {
+//    todoAddBtn.disabled = true 
+//    }
+// }
+
 function addTodo (event){
    event.preventDefault();
    // todo div
