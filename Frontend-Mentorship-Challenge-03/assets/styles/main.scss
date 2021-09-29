@@ -31,7 +31,7 @@ header{
    width: 50%;
    display: flex;
    justify-content: center;
-   bottom: 0;
+   bottom: 7rem;
 }
 .sub-main{
    display: flex;
@@ -72,10 +72,34 @@ input::placeholder {
 }
 .btn--primary{
    padding: 1rem;
-   margin-bottom: 4rem;
    cursor: pointer;
    transition: 1s;
 }
 .btn--primary:hover{
    background-color: yellow;
-}     
+}
+
+// FOR IPHONE X 
+@media (max-width:375px) {
+   body{
+      background-image: url(../images/iphoneX.jpg);
+      
+   }   
+
+   h1{
+      color: white;
+   }
+   .accountBtn{
+      color: white !important;
+   }
+
+      .container{
+      flex-direction: column;
+
+      
+      .container__checkIn,
+      .container__checkOut{
+         margin-top: 5rem;
+      }
+   }
+}

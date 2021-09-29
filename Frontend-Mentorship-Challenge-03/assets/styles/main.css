@@ -53,7 +53,7 @@ header .accountBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: 0;
+  bottom: 7rem;
 }
 
 .sub-main {
@@ -128,7 +128,6 @@ input::placeholder {
 
 .btn--primary {
   padding: 1rem;
-  margin-bottom: 4rem;
   cursor: pointer;
   -webkit-transition: 1s;
   transition: 1s;
@@ -136,5 +135,27 @@ input::placeholder {
 
 .btn--primary:hover {
   background-color: yellow;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url(../images/iphoneX.jpg);
+  }
+  h1 {
+    color: white;
+  }
+  .accountBtn {
+    color: white !important;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .container__checkIn,
+  .container .container__checkOut {
+    margin-top: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
