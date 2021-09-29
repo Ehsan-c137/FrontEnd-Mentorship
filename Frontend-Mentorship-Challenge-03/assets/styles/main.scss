@@ -103,3 +103,33 @@ input::placeholder {
       }
    }
 }
+
+// FOR IPAD 
+@media (max-width:768px) {
+   body{
+      background-image: url(../images/ipad.jpg);
+      h1{
+         font-size: 3rem;
+      }
+   }
+   h1{
+      color: white;
+   }
+   .accountBtn{
+      color: white !important;
+   }
+
+      .container{
+      flex-direction: column;
+      
+
+      
+      .container__checkIn,
+      .container__checkOut{
+         margin-top: 5rem;
+      }
+   }
+   input{
+      font-size: 2.6rem;
+   }
+}

@@ -158,4 +158,32 @@ input::placeholder {
     margin-top: 5rem;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(../images/ipad.jpg);
+  }
+  body h1 {
+    font-size: 3rem;
+  }
+  h1 {
+    color: white;
+  }
+  .accountBtn {
+    color: white !important;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .container__checkIn,
+  .container .container__checkOut {
+    margin-top: 5rem;
+  }
+  input {
+    font-size: 2.6rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
