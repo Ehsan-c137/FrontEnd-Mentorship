@@ -1,0 +1,81 @@
+@import '_reset';
+
+body{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   background-image: url(./../images/desktopBackground.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom;
+
+   font-family: 'Cabin', sans-serif;
+}
+
+header{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem 3rem;
+
+   .accountBtn{
+      text-decoration: none;
+      color: black;
+   }
+}
+
+.main{
+   position: absolute;
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   bottom: 0;
+}
+.sub-main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+.container{
+   display: flex;
+   padding: 4rem;
+   background-color: #28292db0;
+   border-radius: 1rem 1rem 0 0;
+
+   .container__destination,
+   .container__checkIn,
+   .container__checkOut{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      background: transparent;
+      margin: 0 2rem;
+      label{
+         font-size: 1.8rem;
+         margin-bottom: .5rem;
+      }
+   }
+}
+input{
+   text-align: center;
+   border: none;
+   background-color: transparent;
+   color: white;
+   
+}
+input::placeholder {
+   color: rgb(187, 187, 187);
+}
+.btn--primary{
+   padding: 1rem;
+   margin-bottom: 4rem;
+   cursor: pointer;
+   transition: 1s;
+}
+.btn--primary:hover{
+   background-color: yellow;
+}     

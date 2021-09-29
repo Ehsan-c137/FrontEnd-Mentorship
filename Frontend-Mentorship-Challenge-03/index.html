@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/styles/main.css">
+   <title>Travel with us</title>
+</head>
+<body>
+   <header>
+      <h1> Travel with us</h1>
+      <h1><a href="#" class="accountBtn"> Account</a></h1>
+   </header>
+   
+   <div class="main">
+      <div class="sub-main">
+         <div class="container">
+         <div class="container__destination">
+            <label for="destination" class="">Where you go ?</label>
+               <input list="destinationList" id="destination" name="destination" placeholder="Select a region">
+                  <datalist id="destinationList">
+                     <option value="Los Angeles">
+                     <option value="Frankfurt">
+                     <option value="paris">
+                     <option value="amsterdam">
+                     <option value="berlin">
+                  </datalist>  
+         </div>
+            <div class="container__checkIn">
+               <label for="checkIn" class="">Check in</label>
+               <input type="text" id="checkIn" placeholder="Add a date" name="checkIn" onfocus="(this.type= 'date')" onblur="(this.type= 'text')">
+            </div>
+               <div class="container__checkOut">
+                  <label for="checkOut" class="">Check out</label>
+                  <input type="text" id="checkOut" placeholder="Add a date" name="checkOut" onfocus="(this.type= 'date')" onblur="(this.type= 'text')">
+               </div>
+            </div>
+            <button class="btn btn--primary">Search</button>
+      </div>
+   </div>
+</body>
+</html> 
