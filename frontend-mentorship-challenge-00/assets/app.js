@@ -1,24 +1,19 @@
 // SELECTORS
-const editBtn = document.querySelector('.editBtn'),
-      deleteBtn = document.querySelector('.deleteBtn'),
-      todoAddBtn = document.querySelector('.todoAddBtn'),
+let editBtn = document.querySelectorAll('.editBtn'),
+    deleteBtn = document.querySelector('.deleteBtn');
+const todoAddBtn = document.querySelector('.todoAddBtn'),
       todoList = document.querySelector('.ulDiv'),
-      todoInput = document.querySelector('.todoInput'),
-      listItem = document.querySelector('.editBtn');
+      todoInput = document.querySelector('.todoInput');
+      
       
 
 // Event listeners 
 document.addEventListener('DOMContentLoaded', getTodos);
 todoAddBtn.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteItem);
-// listItem.addEventListener('click', editItem);
+
 
 // functions 
-// function whatsValue(){
-// if (todoInput.value.length < 1 ) {
-//    todoAddBtn.disabled = true 
-//    }
-// }
 
 function addTodo (event){
    event.preventDefault();
@@ -126,3 +121,29 @@ function removeLocalTodos(todo){
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem('todos',JSON.stringify(todos));
 }
+
+// edit btn 
+editBtn.forEach(function(e){
+console.log(e)
+   let parentEl = e.parentElement.parentElement;
+   let todoItem = parentEl.querySelector('li');
+   
+   // create input 
+   let editInput = document.createElement('input')
+   editInput.className = 'edit-input';
+   editInput.type = 'text';
+   editInput.placeholder = todoItem.textContent;
+  
+   e.addEventListener('click', ()=>{
+      if (e.textContent == 'save'){
+         e.textContent = 'Edit';
+         todoItem.textContent = editInput.value;
+         parentEl.removeChild(editInput);
+         parentEl.prepend(todoItem);
+      } else {
+         e.textContent = 'save';
+         parentEl.removeChild(todoItem);
+         parentEl.prepend(editInput);
+      }
+   })
+})
