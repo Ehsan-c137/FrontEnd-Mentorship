@@ -1,5 +1,5 @@
 // SELECTORS
-let editBtn = document.querySelectorAll('.editBtn'),
+let editBtns = document.querySelectorAll('.editBtn'),
     deleteBtn = document.querySelector('.deleteBtn');
 const todoAddBtn = document.querySelector('.todoAddBtn'),
       todoList = document.querySelector('.ulDiv'),
@@ -11,7 +11,7 @@ const todoAddBtn = document.querySelector('.todoAddBtn'),
 document.addEventListener('DOMContentLoaded', getTodos);
 todoAddBtn.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteItem);
-
+todoList.addEventListener('click', editItem);
 
 // functions 
 
@@ -44,7 +44,7 @@ function addTodo (event){
    todoList.appendChild(todoDiv);
    // clear todo input value 
    todoInput.value = '';
-   // 
+
 }
 
 
@@ -55,6 +55,37 @@ function deleteItem (e){
       const todo = item.parentElement.parentElement;
       removeLocalTodos(todo);
       todo.remove();
+   }
+}
+
+function editItem (e){
+      const item = e.target;
+
+      // edit todo
+      if(item.classList[0] === 'editBtn'){
+         let parentEl = item.parentElement.parentElement;
+         let todoItem = parentEl.querySelector('li');
+         
+         // create input 
+         let editInput = document.createElement('input');
+         editInput.className = 'edit-input';
+         editInput.type = 'text';
+         editInput.style.padding = '1rem';
+         editInput.style.border = 'none';
+         editInput.style.borderRadius = '.5rem';
+        // editInput.placeholder = todoItem.textContent;
+         
+         if (item.textContent == 'save'){
+         item.textContent = 'Edit';
+         todoItem.textContent = editInput.value;
+         parentEl.removeChild(editInput);
+         parentEl.prepend(todoItem);
+         }
+          else {
+            item.textContent = 'save';
+            parentEl.removeChild(todoItem);
+            parentEl.prepend(editInput);
+         }
    }
 }
 
@@ -122,28 +153,3 @@ function removeLocalTodos(todo){
     localStorage.setItem('todos',JSON.stringify(todos));
 }
 
-// edit btn 
-editBtn.forEach(function(e){
-console.log(e)
-   let parentEl = e.parentElement.parentElement;
-   let todoItem = parentEl.querySelector('li');
-   
-   // create input 
-   let editInput = document.createElement('input')
-   editInput.className = 'edit-input';
-   editInput.type = 'text';
-   editInput.placeholder = todoItem.textContent;
-  
-   e.addEventListener('click', ()=>{
-      if (e.textContent == 'save'){
-         e.textContent = 'Edit';
-         todoItem.textContent = editInput.value;
-         parentEl.removeChild(editInput);
-         parentEl.prepend(todoItem);
-      } else {
-         e.textContent = 'save';
-         parentEl.removeChild(todoItem);
-         parentEl.prepend(editInput);
-      }
-   })
-})
