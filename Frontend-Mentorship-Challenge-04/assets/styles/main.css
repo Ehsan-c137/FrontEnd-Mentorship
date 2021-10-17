@@ -6,27 +6,34 @@
           box-sizing: border-box;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container {
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-#home-page {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+#homepage {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  background-image: url(../images/curology-homepage.jpg);
+  background-size: cover;
   background-color: antiquewhite;
-  font-size: 8rem;
+  font-size: 7rem;
 }
 
-#home-page .homepage-header {
+#homepage .homepage-header {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,27 +41,30 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 3rem;
 }
 
-#home-page .homepage-header .homepage-header__center-item {
+#homepage .homepage-header .homepage-header__center-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#home-page .homepage-header .homepage-header__center-item ul {
+#homepage .homepage-header .homepage-header__center-item ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#home-page .homepage-header .homepage-header__center-item li {
+#homepage .homepage-header .homepage-header__center-item li {
   list-style-type: none;
-  padding: .8rem 4rem;
+  padding: 0rem 4rem;
 }
 
-#home-page nav {
+#homepage nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,5 +73,128 @@ body {
           justify-content: center;
   font-size: 10rem;
   padding: 3rem 0rem;
+}
+
+#homepage .homepage__content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem 7rem 0rem 0rem;
+}
+
+#homepage .homepage__left-side {
+  margin: 2rem 0rem 0rem 5rem;
+  width: 35rem;
+  font-size: 2.5rem;
+}
+
+#homepage .homepage__left-side .homepage-searchbox {
+  margin-top: 2rem;
+}
+
+#homepage .homepage__left-side .homepage-searchbox input {
+  border: none;
+  border-radius: .1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+#homepage .homepage__left-side .homepage-searchbox button {
+  border: none;
+}
+
+#homepage .homepage__left-side .homepage-searchbox i {
+  background-color: white;
+  padding: 1.1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+#homepage .homepage__left-side .homepage__view-detail-btn {
+  border: none;
+  background-color: #3f298a;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#homepage .homepage__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 7rem 0rem 0rem 18rem;
+}
+
+#homepage .homepage__right-side .horizontal-row {
+  opacity: 0;
+  margin: 1rem;
+  border-top: 1px black solid;
+  width: 6rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#homepage .homepage__right-side .homepage-activeRow {
+  -webkit-animation: moveInRight 2s;
+          animation: moveInRight 2s;
+  opacity: 1;
+}
+
+#homepage .homepage__right-side .homepage__right-side-text {
+  opacity: 0;
+}
+
+#homepage .homepage__right-side .homepageRigtSideText-active {
+  opacity: 1;
+  -webkit-animation: moveInRight 2s;
+          animation: moveInRight 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+#homepage .homepage__right-side i {
+  color: #3a3a3a63;
+  font-size: 4rem;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#homepage .homepage__right-side .rotate-icon {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#about-us {
+  background-color: antiquewhite;
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 /*# sourceMappingURL=main.css.map */

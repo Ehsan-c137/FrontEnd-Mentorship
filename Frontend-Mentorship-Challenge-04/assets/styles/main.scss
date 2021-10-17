@@ -5,23 +5,32 @@
    box-sizing: border-box;
 }
 
-body{
-   display: flex;
-   //flex-direction: column;
+.container{
+   height: 100vh;
+   scroll-snap-type: y mandatory;
+   overflow-x: hidden;
+   overflow-y: scroll;
 }
 
-#home-page{
+section{
    display: flex;
-   flex-direction: column;
-   width: 100vw;
+   scroll-snap-align: start;
    height: 100vh;
+}
+
+#homepage{
+   flex-direction: column;
+   background-image: url(../images/curology-homepage.jpg);
+   // background-position: center;
+   background-size: cover;
    background-color: antiquewhite;
-   font-size: 8rem;
+   font-size: 7rem;
 
    .homepage-header{
       width: 100vw;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 2rem 3rem;
 
       .homepage-header__center-item{
@@ -32,7 +41,7 @@ body{
          }
          li {
             list-style-type: none; 
-            padding: .8rem 4rem;
+            padding: 0rem 4rem;
          }
       }
    }
@@ -43,4 +52,104 @@ body{
       font-size: 10rem;
       padding: 3rem 0rem;
    };
+
+
+   .homepage__content-container{
+      display: flex;
+      padding: 0rem 7rem 0rem 0rem;
+   }
+   .homepage__left-side{
+      margin: 2rem 0rem 0rem 5rem;
+      width:35rem;
+      font-size: 2.5rem;   
+      
+      .homepage-searchbox{
+         margin-top: 2rem;
+
+         input{
+            border:none;
+            border-radius: .1rem;
+            padding: 1rem;
+            position: relative;
+         }
+         button{
+            border: none;
+         }
+         i{
+            background-color: white;
+            padding: 1.1rem;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+         }
+      }
+      .homepage__view-detail-btn{
+         border: none;
+         background-color: #3f298a;
+         color: white;
+         padding: 1rem;
+         margin-top: 2rem;
+      }
+   }
+
+   .homepage__right-side{
+      display: flex;
+      // flex-direction: column;
+      margin: 7rem 0rem 0rem 18rem;
+      
+      .horizontal-row{
+         opacity: 0;
+         margin: 1rem;
+         border-top: 1px black solid;
+         width: 6rem;
+         transition: 1s;
+      }
+      .homepage-activeRow {
+         animation: moveInRight 2s;  
+         opacity: 1;
+      }
+      .homepage__right-side-text{
+         opacity: 0;
+      }
+      .homepageRigtSideText-active{
+         opacity: 1;
+         animation: moveInRight 2s;
+         animation-delay: 1s;
+         animation-fill-mode: backwards;
+      }
+      i{
+         color: #3a3a3a63;
+         font-size: 4rem;
+         cursor: pointer;
+         transition: 1s;
+      }
+      .rotate-icon {
+         transform: rotate(45deg);
+      }
+   }
+}
+
+#about-us{
+   background-color: antiquewhite;
+
+}
+
+@keyframes moveInRight {
+   0%{
+      opacity: 0;
+      transform: translateX(-2rem);
+   }
+
+   // 50%{
+   //    opacity: .5;
+   //    transform: translateX(-2rem);
+   // }
+
+   // 80%{
+   //    opacity: .8;
+   // }
+   100%{
+      opacity: 1;
+      transform: translateX(0);
+   }
 }
