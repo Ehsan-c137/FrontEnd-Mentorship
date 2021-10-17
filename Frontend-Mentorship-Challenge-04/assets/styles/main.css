@@ -20,6 +20,7 @@ section {
   display: flex;
   scroll-snap-align: start;
   height: 100vh;
+  color: #463232;
 }
 
 #homepage {
@@ -27,7 +28,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/curology-homepage.jpg);
+  background-image: url(../images/p1.jpg);
   background-size: cover;
   background-color: antiquewhite;
   font-size: 7rem;
@@ -113,7 +114,7 @@ section {
 
 #homepage .homepage__left-side .homepage__view-detail-btn {
   border: none;
-  background-color: #3f298a;
+  background-color: #463232;
   color: white;
   padding: 1rem;
   margin-top: 2rem;
@@ -123,7 +124,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 7rem 0rem 0rem 18rem;
+  margin: 6rem 0rem 0rem 47rem;
 }
 
 #homepage .homepage__right-side .horizontal-row {
@@ -156,7 +157,7 @@ section {
 }
 
 #homepage .homepage__right-side i {
-  color: #3a3a3a63;
+  color: #e19772;
   font-size: 4rem;
   cursor: pointer;
   -webkit-transition: 1s;
