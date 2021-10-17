@@ -143,24 +143,36 @@ section{
       margin-top: 3rem;
    }
    .some-of-our-lenders__logos{
-      // .chase-logo,
-      // .asana-logo,
-      // .google-logo,
-      // .buzzfeed-logo,
-      // .toggl-logo,
-      // .walmart-logo{
-      //    height: .1rem;
-      //    width: .1rem;
-      
+       .chase-logo{
+          width: 15rem;
+          height: 3rem;
+       }
+       .asana-logo{
+         width: 15rem;
+         height: 3rem;
+       }
+      .google-logo{
+         width: 12rem;
+         height: 4rem;
+      }
+      .buzzfeed-logo{
+         width: 17rem;
+         height: 3rem;
+      }
+      .toggl-logo{
+         width: 11rem;
+         height: 4rem;
+      }
+      .walmart-logo{
+         height: 10rem;
+         width: 20rem;
+         margin-top: -2.6rem;
+      }
       display: flex;
       justify-content: space-between;
       padding: 1rem;
       img{
-         
-         width: 12rem;
-         height: 4rem;
-         margin: 2rem;
-         
+         margin: 2rem 2rem;
       }
    }
 }
