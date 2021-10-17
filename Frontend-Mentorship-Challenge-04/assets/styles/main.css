@@ -169,8 +169,44 @@ section {
           transform: rotate(45deg);
 }
 
-#about-us {
+#some-of-our-lenders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25%;
   background-color: antiquewhite;
+  font-size: 8rem;
+  padding: 10rem;
+}
+
+#some-of-our-lenders h3 {
+  margin-top: 3rem;
+}
+
+#some-of-our-lenders .some-of-our-lenders__logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+#some-of-our-lenders .some-of-our-lenders__logos img {
+  width: 12rem;
+  height: 4rem;
+  margin: 2rem;
 }
 
 @-webkit-keyframes moveInRight {
