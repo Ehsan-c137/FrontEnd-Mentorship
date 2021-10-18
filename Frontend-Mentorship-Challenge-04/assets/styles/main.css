@@ -29,6 +29,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   background-image: url(../images/p1.jpg);
+  background-position: center;
   background-size: cover;
   background-color: antiquewhite;
   font-size: 7rem;
@@ -73,7 +74,6 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 10rem;
-  padding: 3rem 0rem;
 }
 
 #homepage .homepage__content-container {
@@ -197,6 +197,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -204,38 +208,121 @@ section {
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos .chase-logo {
-  width: 15rem;
-  height: 3rem;
+  width: 11rem;
+  height: 2rem;
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos .asana-logo {
-  width: 15rem;
-  height: 3rem;
+  width: 10rem;
+  height: 2rem;
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos .google-logo {
-  width: 12rem;
-  height: 4rem;
-}
-
-#some-of-our-lenders .some-of-our-lenders__logos .buzzfeed-logo {
-  width: 17rem;
+  width: 9rem;
   height: 3rem;
 }
 
+#some-of-our-lenders .some-of-our-lenders__logos .buzzfeed-logo {
+  width: 10rem;
+  height: 2rem;
+}
+
 #some-of-our-lenders .some-of-our-lenders__logos .toggl-logo {
-  width: 11rem;
-  height: 4rem;
+  width: 8rem;
+  height: 3rem;
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos .walmart-logo {
-  height: 10rem;
-  width: 20rem;
-  margin-top: -2.6rem;
+  height: 8rem;
+  width: 16rem;
+  margin-top: -1rem;
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos img {
   margin: 2rem 2rem;
+}
+
+#about-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#about-us .about-us__buy-now {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem 9rem;
+}
+
+#about-us .about-us__buy-now h1 {
+  font-size: 6rem;
+}
+
+#about-us .about-us__buy-now p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+#about-us .about-us__buy-now button {
+  border: none;
+  font-size: 2rem;
+  padding: .5rem;
+  margin-top: 2rem;
+  background-color: #463232;
+  color: white;
+  -webkit-box-shadow: 0.5rem 1.5rem 3rem rgba(0, 0, 0, 0.247);
+          box-shadow: 0.5rem 1.5rem 3rem rgba(0, 0, 0, 0.247);
+}
+
+#about-us .about-us__buy-now .about-us__left-img {
+  width: 36rem;
+  height: 33rem;
+  margin-top: 4rem;
+}
+
+#about-us .about-us__texts-read-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 2rem;
+  margin-left: 13rem;
+}
+
+#about-us .about-us__texts-read-more .about-us__rigt-img {
+  margin-top: 1rem;
+  width: 36rem;
+  height: 33rem;
+}
+
+#about-us .about-us__texts-read-more p {
+  width: 36rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#about-us .about-us__texts-read-more button {
+  border-color: #463232;
+  font-size: 2rem;
+  padding: .5rem;
+  margin-top: 2rem;
+  background: transparent;
+  color: #463232;
 }
 
 @-webkit-keyframes moveInRight {

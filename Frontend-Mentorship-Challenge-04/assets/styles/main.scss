@@ -5,6 +5,8 @@
    box-sizing: border-box;
 }
 
+$color-brown:  rgb(70,50,50);
+
 .container{
    height: 100vh;
    scroll-snap-type: y mandatory;
@@ -16,13 +18,13 @@ section{
    display: flex;
    scroll-snap-align: start;
    height: 100vh;
-   color: #463232;
+   color: $color-brown;
 }
 
 #homepage{
    flex-direction: column;
    background-image: url(../images/p1.jpg);
-   // background-position: center;
+   background-position: center;
    background-size: cover;
    background-color: antiquewhite;
    font-size: 7rem;
@@ -51,7 +53,6 @@ section{
       display: flex;
       justify-content: center;
       font-size: 10rem;
-      padding: 3rem 0rem;
    };
 
 
@@ -86,7 +87,7 @@ section{
       }
       .homepage__view-detail-btn{
          border: none;
-         background-color: rgb(70,50,50);
+         background-color: $color-brown;
          color: white;
          padding: 1rem;
          margin-top: 2rem;
@@ -143,36 +144,100 @@ section{
       margin-top: 3rem;
    }
    .some-of-our-lenders__logos{
+      display: flex;
+      align-items: center;
        .chase-logo{
-          width: 15rem;
-          height: 3rem;
+          width: 11rem;
+          height: 2rem;
        }
        .asana-logo{
-         width: 15rem;
-         height: 3rem;
+         width: 10rem;
+         height: 2rem;
        }
       .google-logo{
-         width: 12rem;
-         height: 4rem;
-      }
-      .buzzfeed-logo{
-         width: 17rem;
+         width: 9rem;
          height: 3rem;
       }
+      .buzzfeed-logo{
+         width: 10rem;
+         height: 2rem;
+      }
       .toggl-logo{
-         width: 11rem;
-         height: 4rem;
+         width: 8rem;
+         height: 3rem;
       }
       .walmart-logo{
-         height: 10rem;
-         width: 20rem;
-         margin-top: -2.6rem;
-      }
+         height: 8rem;
+         width: 16rem;
+         margin-top: -1rem;
+       }
+
       display: flex;
       justify-content: space-between;
       padding: 1rem;
       img{
          margin: 2rem 2rem;
+      }
+   }
+}
+
+#about-us{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   
+   .about-us__buy-now{
+      // background-color: skyblue;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 9rem; 
+      
+      h1{
+         font-size: 6rem;
+      }
+      p{
+         font-size: 2rem;
+         margin-top: 1rem;
+      }
+      button{
+         border: none;
+         font-size: 2rem;
+         padding: .5rem;
+         margin-top: 2rem;
+         background-color: $color-brown;
+         color: white;
+         box-shadow: .5rem 1.5rem 3rem rgba(0, 0, 0, 0.247);
+      }
+      .about-us__left-img{
+         width: 36rem;
+         height: 33rem;
+         margin-top: 4rem;
+      }
+   }
+   .about-us__texts-read-more{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem;
+      margin-left: 13rem;
+      .about-us__rigt-img{
+         margin-top: 1rem;
+         width: 36rem;
+         height: 33rem;
+      }
+      p{
+         width: 36rem;
+         font-size: 1.5rem;
+         margin-top: 1rem;
+      }
+      button{
+         border-color: $color-brown;
+         font-size: 2rem;
+         padding: .5rem;
+         margin-top: 2rem;
+         background: transparent;
+         color: $color-brown;
+
       }
    }
 }
