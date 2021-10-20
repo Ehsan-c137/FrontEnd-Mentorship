@@ -2,10 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -36,7 +39,6 @@ section {
   background-position: center;
   background-size: cover;
   background-color: antiquewhite;
-  font-size: 7rem;
 }
 
 #homepage .homepage-header {
@@ -51,6 +53,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 3rem;
+  font-size: 2rem;
 }
 
 #homepage .homepage-header .homepage-header__center-item {
@@ -77,14 +80,17 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 10rem;
+  font-size: 6rem;
 }
 
 #homepage .homepage__content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0rem 7rem 0rem 0rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
 }
 
 #homepage .homepage__left-side {
@@ -111,7 +117,7 @@ section {
 #homepage .homepage__left-side .homepage-searchbox i {
   background-color: white;
   padding: 1.1rem;
-  font-size: 1rem;
+  font-size: 1.4rem;
   border: none;
   cursor: pointer;
 }
@@ -128,7 +134,11 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 6rem 0rem 0rem 47rem;
+  font-size: 2rem;
+}
+
+#homepage .homepage__right-side p {
+  width: 30rem;
 }
 
 #homepage .homepage__right-side .horizontal-row {
@@ -189,7 +199,7 @@ section {
           align-items: center;
   height: 25%;
   background-color: antiquewhite;
-  font-size: 8rem;
+  font-size: 4rem;
   padding: 10rem;
 }
 
@@ -247,10 +257,15 @@ section {
 }
 
 #about-us {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about-us .about-us__buy-now {
@@ -274,6 +289,7 @@ section {
 #about-us .about-us__buy-now p {
   font-size: 2rem;
   margin-top: 1rem;
+  width: 20rem;
 }
 
 #about-us .about-us__buy-now button {
@@ -412,13 +428,17 @@ section {
   color: whitesmoke;
 }
 
-#products .products-image-caption .products-left {
-  margin: 1rem;
-  width: 50%;
+#products .products-image-caption .products-left,
+#products .products-image-caption .products-right {
+  margin: 0rem 10rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#products .products-image-caption .products-left {
+  width: 50%;
 }
 
 #products .products-image-caption .products-left img {
@@ -438,14 +458,6 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#products .products-image-caption .products-right {
-  margin: 1rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #products .products-image-caption .products-right img {
