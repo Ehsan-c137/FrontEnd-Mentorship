@@ -583,6 +583,102 @@ section {
   margin-top: 2rem;
 }
 
+#customers-page {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #FFFBF7;
+}
+
+#customers-page .customers-page__quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#customers-page .customers-page__text h1 {
+  font-size: 5rem;
+}
+
+#customers-page .customers-page__text p {
+  font-size: 2rem;
+  width: 61rem;
+  margin-top: 2rem;
+}
+
+#customers-page .customers-page__sample-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#customers-page .customers-page__sample-comment {
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+#customers-page .customers-page__sample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40rem;
+  height: 40rem;
+  padding: 3rem;
+  margin-top: 6rem;
+  background-color: white;
+  position: relative;
+}
+
+#customers-page .customers-page__sample .customers-page__sample-stars,
+#customers-page .customers-page__sample .customers-page__sample-comment,
+#customers-page .customers-page__sample .customers-page__sample-profile {
+  position: absolute;
+}
+
+#customers-page .customers-page__sample .customers-page__sample-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 2rem;
+}
+
+#customers-page .customers-page__sample .customers-page__sample-profile img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+#customers-page .customers-page__sample .customers-page__sample-profile .customers-page__sample-profile-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
