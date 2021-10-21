@@ -358,7 +358,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  scroll-margin-bottom: 70vh;
+  height: 120vh;
+  scroll-margin-bottom: 40vh;
 }
 
 #products h1 {
@@ -505,6 +506,81 @@ section {
 
 #products .products-image-caption .products_sub-text h3 {
   font-size: 2rem;
+}
+
+#provides-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#provides-page .provide-page-first-row {
+  width: 100%;
+  background-color: #FFFBF7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 3rem;
+  padding: 3rem 4rem;
+  text-align: center;
+}
+
+#provides-page .provide-page-first-row .provides-page-wrapper {
+  height: 6rem;
+  border-left: 2px solid black;
+  margin: 0rem 4rem;
+}
+
+#provides-page .provide-page-second-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 15rem;
+  margin-top: 4rem;
+}
+
+#provides-page .provide-page-second-row img {
+  -webkit-box-shadow: antiquewhite -3rem 3rem 0rem;
+          box-shadow: antiquewhite -3rem 3rem 0rem;
+  width: 50rem;
+  height: 50rem;
+}
+
+#provides-page .provide-page-second-row .provide-page-second-row__text {
+  margin-left: 6rem;
+  width: 35rem;
+}
+
+#provides-page .provide-page-second-row .provide-page-second-row__text h1 {
+  font-size: 5rem;
+}
+
+#provides-page .provide-page-second-row .provide-page-second-row__text p {
+  font-size: 2rem;
+}
+
+#provides-page .provide-page-second-row .provide-page-second-row__text button {
+  border: none;
+  padding: 1rem 3rem;
+  background-color: #463232;
+  color: white;
+  margin-top: 2rem;
 }
 
 @-webkit-keyframes moveInRight {
