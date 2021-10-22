@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Didact+Gothic&display=swap");
 html {
   scroll-behavior: smooth;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 :root {
@@ -54,6 +56,11 @@ section {
           align-items: center;
   padding: 2rem 3rem;
   font-size: 2rem;
+}
+
+#homepage .homepage-header .nav-text {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
 }
 
 #homepage .homepage-header .homepage-header__center-item {
@@ -199,8 +206,9 @@ section {
           align-items: center;
   height: 25%;
   background-color: antiquewhite;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 10rem;
+  font-family: sans-serif;
 }
 
 #some-of-our-lenders h3 {
@@ -359,6 +367,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: 120vh;
+  padding-bottom: 3rem;
   scroll-margin-bottom: 40vh;
 }
 
@@ -661,6 +670,8 @@ section {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #customers-page .customers-page__sample .customers-page__sample-profile .customers-page__sample-profile-name {

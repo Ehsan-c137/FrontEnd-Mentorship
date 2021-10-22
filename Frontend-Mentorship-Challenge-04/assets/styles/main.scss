@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Didact+Gothic&display=swap');
+
 html{
    scroll-behavior: smooth;
+   font-family: 'Didact Gothic', sans-serif;
 }
 :root{
    font-size: 62.5%;
@@ -9,6 +12,7 @@ html{
    margin: 0;
    box-sizing: border-box;
 }
+
 // ::-webkit-scrollbar{
 
 // }
@@ -41,6 +45,7 @@ section{
    background-size: cover;
    background-color: antiquewhite;
 
+ 
    .homepage-header{
       width: 100vw;
       display: flex;
@@ -48,7 +53,10 @@ section{
       align-items: center;
       padding: 2rem 3rem;
       font-size: 2rem;
-
+      .nav-text{
+         font-family: 'Cabin', sans-serif;
+         font-weight: 700;
+      }
       .homepage-header__center-item{
          display: flex;
          ul {
@@ -153,8 +161,9 @@ section{
    align-items: center;
    height: 25%;
    background-color: antiquewhite;
-   font-size: 4rem;
+   font-size: 3rem;
    padding: 10rem;
+   font-family: sans-serif;;
    h3{
       margin-top: 3rem;
    }
@@ -267,6 +276,7 @@ section{
    flex-direction: column;
    align-items: center;
    height: 120vh;
+   padding-bottom: 3rem;
    scroll-margin-bottom: 40vh;
 
       h1{
@@ -484,6 +494,7 @@ section{
             width: 8rem;
             height: 8rem;
             border-radius: 50%;
+            object-fit:cover;
          }
          .customers-page__sample-profile-name{
             display: flex;
