@@ -284,6 +284,9 @@ section{
         font-size: 6rem;
         margin: 1rem;
       }
+      h3{
+         color: #255764;
+      }
    .products-nav__text{
       font-size: 2rem;
       margin: .5rem;
@@ -388,7 +391,9 @@ section{
    display: flex;
    flex-direction: column;
    align-items: center;
-
+   p{
+      opacity: 80%;
+   }
    .provide-page-first-row{
       width: 100%;
       background-color: #FFFBF7;
@@ -459,6 +464,7 @@ section{
          font-size: 2rem;
          width: 61rem;
          margin-top: 2rem;
+         opacity: 80%;
       }   
    }
    .customers-page__sample-container{
@@ -547,6 +553,7 @@ footer{
                list-style-type: none;
                li{
                   font-size: 2rem;
+                  opacity: 70%;
                }
             }
 
@@ -575,11 +582,13 @@ footer{
 
          div{
             width: 90vw;
-            border-bottom: 2px solid black ;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.178) ;
+
          }
          p{
             font-size: 2rem;
             padding: 3rem;
+            opacity: 60%;
          }
       }
    }

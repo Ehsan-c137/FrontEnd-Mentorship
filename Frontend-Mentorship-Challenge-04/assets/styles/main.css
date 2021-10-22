@@ -377,6 +377,10 @@ section {
   margin: 1rem;
 }
 
+#products h3 {
+  color: #255764;
+}
+
 #products .products-nav__text {
   font-size: 2rem;
   margin: .5rem;
@@ -530,6 +534,10 @@ section {
           align-items: center;
 }
 
+#provides-page p {
+  opacity: 80%;
+}
+
 #provides-page .provide-page-first-row {
   width: 100%;
   background-color: #FFFBF7;
@@ -624,6 +632,7 @@ section {
   font-size: 2rem;
   width: 61rem;
   margin-top: 2rem;
+  opacity: 80%;
 }
 
 #customers-page .customers-page__sample-container {
@@ -751,6 +760,7 @@ footer .footer-container__first-row .footer-container__first-row-content ul {
 
 footer .footer-container__first-row .footer-container__first-row-content ul li {
   font-size: 2rem;
+  opacity: 70%;
 }
 
 footer .footer-container__first-row .footer-container__first-row-content .footer__wildling-text {
@@ -787,12 +797,13 @@ footer .footer-container__second-row {
 
 footer .footer-container__second-row div {
   width: 90vw;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.178);
 }
 
 footer .footer-container__second-row p {
   font-size: 2rem;
   padding: 3rem;
+  opacity: 60%;
 }
 
 @-webkit-keyframes moveInRight {
