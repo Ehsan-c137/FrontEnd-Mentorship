@@ -506,6 +506,11 @@ section{
       .customers-page__sample-profile {        
          position: absolute;
       }
+      .customers-page__sample-stars{
+         i{
+            color: #FF8974;
+         }
+      }
       .customers-page__sample-profile {
          display: flex;
          bottom: 2rem;

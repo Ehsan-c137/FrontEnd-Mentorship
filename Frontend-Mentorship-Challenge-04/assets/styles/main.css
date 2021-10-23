@@ -692,6 +692,10 @@ section {
   position: absolute;
 }
 
+#customers-page .customers-page__sample .customers-page__sample-stars i {
+  color: #FF8974;
+}
+
 #customers-page .customers-page__sample .customers-page__sample-profile {
   display: -webkit-box;
   display: -ms-flexbox;
