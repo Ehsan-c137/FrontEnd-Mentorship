@@ -78,6 +78,11 @@ section {
 #homepage .homepage-header .homepage-header__center-item li {
   list-style-type: none;
   padding: 0rem 4rem;
+  cursor: pointer;
+}
+
+#homepage .homepage-header .hamberger-menu {
+  border-top: 1px solid black;
 }
 
 #homepage nav {
@@ -222,11 +227,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos .chase-logo {
@@ -366,7 +366,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120vh;
+  height: 130vh;
   padding-bottom: 3rem;
   scroll-margin-bottom: 40vh;
 }
@@ -403,6 +403,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 2rem;
 }
 
 #products .products-image-caption .products_sub-text p {
@@ -422,6 +423,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 2rem;
 }
 
 #products .products-image-caption .products-image-caption__shop-btns button {
@@ -502,7 +504,7 @@ section {
   display: flex;
 }
 
-#products .products-image-caption .products_sub-text {
+#products .products-image-caption .products-short-specifics .products_sub-text {
   width: 50%;
   font-size: 1rem;
   display: -webkit-box;
@@ -517,7 +519,7 @@ section {
           align-items: center;
 }
 
-#products .products-image-caption .products_sub-text h3 {
+#products .products-image-caption .products-short-specifics .products_sub-text h3 {
   font-size: 2rem;
 }
 

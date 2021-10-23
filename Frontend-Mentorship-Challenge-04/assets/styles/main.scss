@@ -65,7 +65,11 @@ section{
          li {
             list-style-type: none; 
             padding: 0rem 4rem;
+            cursor: pointer;
          }
+      }
+      .hamberger-menu{
+         border-top: 1px solid black;
       }
    }
 
@@ -170,11 +174,11 @@ section{
    .some-of-our-lenders__logos{
       display: flex;
       align-items: center;
-       .chase-logo{
-          width: 11rem;
-          height: 2rem;
-       }
-       .asana-logo{
+      .chase-logo{
+         width: 11rem;
+         height: 2rem;
+      }
+      .asana-logo{
          width: 10rem;
          height: 2rem;
        }
@@ -194,11 +198,7 @@ section{
          height: 8rem;
          width: 16rem;
          margin-top: -1rem;
-       }
-
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem;
+      }
       img{
          margin: 2rem 2rem;
       }
@@ -275,115 +275,120 @@ section{
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 120vh;
+   height: 130vh;
    padding-bottom: 3rem;
    scroll-margin-bottom: 40vh;
 
-      h1{
-        text-align: center;
-        font-size: 6rem;
-        margin: 1rem;
-      }
-      h3{
-         color: #255764;
-      }
+   h1{
+      text-align: center;
+      font-size: 6rem;
+      margin: 1rem;
+   }
+   h3{
+      color: #255764;
+   }
    .products-nav__text{
       font-size: 2rem;
       margin: .5rem;
    }
-.products-image-caption{
-   display: flex;
-   justify-content: center;
-   .products_sub-text{
-      display: flex;
-      flex-direction: column;
-      p{
-         font-size: 1.5rem;
-      }
-      .products-border{
-         border-bottom: 2px solid black;
-         width: 5rem;
-         margin: .5rem;
-      }
-   }
-   .products-image-caption__shop-btns{
+
+   .products-image-caption{
       display: flex;
       justify-content: center;
-      button{
-         padding: 1rem;
-         margin: 1rem;
-         font-size: 1rem;
-      }
-      .shop-btns__add-to-cart{
-         color: $color-brown;
-         background: transparent;
-         border: 1px solid $color-brown;
-      }
-      .shop-btns__buy-now{
-         background-color: $color-brown;
-         border: none;
-         color: whitesmoke;
-      }
-   }
 
-   .products-left,
-   .products-right{
-      margin: 0rem 10rem;
-      flex-direction: column;
-   }
-   .products-left{
+      .products_sub-text{
+         display: flex;
+         flex-direction: column;
+         margin-top: 2rem;
+
+         p{
+            font-size: 1.5rem;
+         }
+         .products-border{
+            border-bottom: 2px solid black;
+            width: 5rem;
+            margin: .5rem;
+         }
+      }
+      .products-image-caption__shop-btns{
+         display: flex;
+         justify-content: center;
+         margin-top: 2rem;
+         button{
+            padding: 1rem;
+            margin: 1rem;
+            font-size: 1rem;
+         }
+         .shop-btns__add-to-cart{
+            color: $color-brown;
+            background: transparent;
+            border: 1px solid $color-brown;
+         }
+         .shop-btns__buy-now{
+            background-color: $color-brown;
+            border: none;
+            color: whitesmoke;
+         }
+      }
+
+      .products-left,
+      .products-right{
+         margin: 0rem 10rem;
+         flex-direction: column;
+      }
+      .products-left{
  
-      width: 50%;
-      img{
-         margin-top: 3rem;
-         width: 40rem;
-         height: 40rem;
-      }
-      h1{
-         text-align: left;
-      }
+         width: 50%;
+         img{
+            margin-top: 3rem;
+            width: 40rem;
+            height: 40rem;
+         }
+         h1{
+            text-align: left;
+         }
 
+         .products-short-specifics{
+            display: flex;
+            justify-content: center;
+         }
+      }
+      .products-right{
+         img{
+            margin-top: 3rem;
+            width: 40rem;
+            height: 40rem;
+         }
+
+         h1{
+            text-align: left;
+         }
+      }
+      .products-left__text,
+      .products-right__text{
+         width: 40rem;
+         font-size: 1.5rem;
+      }
+   
       .products-short-specifics{
          display: flex;
          justify-content: center;
-      }
-   }
-   .products-right{
-      img{
-         margin-top: 3rem;
-         width: 40rem;
-         height: 40rem;
-      }
+         width: 100%;
+         font-size: 1rem;
+         display: flex;
 
-      h1{
-         text-align: left;
+         .products_sub-text{
+            width: 50%;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+               font-size: 2rem;
+            }
+         }
       }
    }
-   .products-left__text,
-   .products-right__text{
-      width: 40rem;
-      font-size: 1.5rem;
-   }
-   
-   .products-short-specifics{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      font-size: 1rem;
-      display: flex;
-
-   }
-   .products_sub-text{
-      width: 50%;
-      font-size: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h3{
-         font-size: 2rem;
-      }
-   }
-}
 }
 
 #provides-page{
@@ -469,7 +474,6 @@ section{
    }
    .customers-page__sample-container{
       display: flex;
-
       justify-content: center;
    }
    .customers-page__sample-comment{
@@ -485,7 +489,6 @@ section{
       padding: 3rem;
       margin-top: 6rem;
       background-color: white;
-      
       position: relative;
 
       .customers-page__sample-stars,
@@ -510,10 +513,8 @@ section{
             margin-left: 2rem;
             font-size: 1.5rem;
          }
-      }
-      
+      } 
    }
-
 }
 
 
@@ -528,70 +529,69 @@ footer{
    width: 100%;
    position: relative;
 
-      .footer-container__first-row{
+   .footer-container__first-row{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      .footer-container__first-row-right{
          display: flex;
+         width: 40%;
          justify-content: space-around;
-         width: 100%;
-         .footer-container__first-row-right{
-            display: flex;
-            width: 40%;
-            justify-content: space-around;
-         }
-
-
-         .footer-container__first-row-content{
-            display: flex;
-            flex-direction: column;
-
-            h2{
-               font-size: 3rem;
-            }
-            p{
-               font-size: 2rem;
-            }
-            ul{
-               list-style-type: none;
-               li{
-                  font-size: 2rem;
-                  opacity: 70%;
-               }
-            }
-
-            .footer__wildling-text{
-               width: 30rem;
-            }
-            
-            .footer-icons{
-               margin-top: 3rem;
-               img{
-                  margin: 0rem .5rem;
-                  width: 3rem;
-                  height: 3rem;
-               }
-            }
-         }
       }
 
-      .footer-container__second-row{
+      .footer-container__first-row-content{
          display: flex;
          flex-direction: column;
-         align-items: center;
-         justify-content: space-between;
-         position: absolute;
-         bottom: 1rem;
 
-         div{
-            width: 90vw;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.178) ;
-
+         h2{
+            font-size: 3rem;
          }
          p{
             font-size: 2rem;
-            padding: 3rem;
-            opacity: 60%;
+         }
+         ul{
+            list-style-type: none;
+            li{
+               font-size: 2rem;
+               opacity: 70%;
+            }
+         }
+
+         .footer__wildling-text{
+            width: 30rem;
+         }
+          
+         .footer-icons{
+            margin-top: 3rem;
+            img{
+               margin: 0rem .5rem;
+               width: 3rem;
+               height: 3rem;
+            }
          }
       }
    }
+
+   .footer-container__second-row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 1rem;
+
+      div{
+         width: 90vw;
+         border-bottom: 2px solid rgba(0, 0, 0, 0.178) ;
+
+      }
+      p{
+         font-size: 2rem;
+         padding: 3rem;
+         opacity: 60%;
+      }
+   }
+}
 
 
 
