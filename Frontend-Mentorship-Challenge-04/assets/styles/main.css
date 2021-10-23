@@ -791,6 +791,18 @@ footer .footer-container__first-row .footer-container__first-row-content ul li {
   opacity: 70%;
 }
 
+footer .footer-container__first-row .footer-container__first-row-content ul .footer-go-to-up {
+  margin-top: 1.5rem;
+}
+
+footer .footer-container__first-row .footer-container__first-row-content ul .footer-go-to-up a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+}
+
 footer .footer-container__first-row .footer-container__first-row-content .footer__wildling-text {
   width: 30rem;
 }
