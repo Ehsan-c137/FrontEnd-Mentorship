@@ -128,14 +128,19 @@ section {
 }
 
 #homepage .homepage__left-side .homepage-searchbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 2rem;
+  border: 2px solid white;
 }
 
 #homepage .homepage__left-side .homepage-searchbox input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   border: none;
-  border-radius: .1rem;
   padding: 1rem;
-  position: relative;
 }
 
 #homepage .homepage__left-side .homepage-searchbox button {
@@ -143,7 +148,8 @@ section {
 }
 
 #homepage .homepage__left-side .homepage-searchbox i {
-  background-color: white;
+  background-color: #463232;
+  color: white;
   padding: 1.1rem;
   font-size: 1.4rem;
   border: none;
