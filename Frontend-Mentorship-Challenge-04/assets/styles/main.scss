@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Didact+Gothic&display=swap');
+$color-brown:  rgb(70,50,50);
 
 html{
    scroll-behavior: smooth;
@@ -13,16 +14,20 @@ html{
    box-sizing: border-box;
 }
 
-// ::-webkit-scrollbar{
+::-webkit-scrollbar {
+   width: 1rem;              
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background: antiquewhite;
+ }
+ 
+::-webkit-scrollbar-thumb {
+   background-color: gray;   
+   border-radius: 2rem;      
+   border: 3px solid antiquewhite;  
+ }
 
-// }
-// ::-webkit-scrollbar-thumb{
-//    border-radius: 2rem;
-//    width: 1rem;
-//    background-color: aqua;
-// }
-
-$color-brown:  rgb(70,50,50);
 
 .container{
    height: 100vh;

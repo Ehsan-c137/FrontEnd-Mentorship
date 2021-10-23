@@ -15,6 +15,20 @@ html {
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: antiquewhite;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 2rem;
+  border: 3px solid antiquewhite;
+}
+
 .container {
   height: 100vh;
   -ms-scroll-snap-type: y mandatory;
