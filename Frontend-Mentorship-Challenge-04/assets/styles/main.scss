@@ -30,7 +30,56 @@ html{
    border: 3px solid antiquewhite;  
  }
 
-
+ #homepage{
+    
+    // ++-------------------++
+    // || hamburger   menu  ||
+    // ++-------------------++
+   .menu{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       position: fixed;
+       transform: translateY(-100%);
+       transition: transform 0.2s;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       z-index: 99;
+       background: rgba(255, 255, 255, 0.842);
+       list-style: none;
+       padding-top: 4rem;
+       ul{
+          list-style: none;
+       }
+      li{
+         margin: 2rem;
+      }
+      a{ 
+         text-decoration: none;
+         color: $color-brown;
+         font-size: 3rem;
+      }
+   }
+      .show-menu{
+         transform: translateY(0);
+      }
+      .hamburger-buttons{
+         position: fixed;
+         z-index: 100;
+         font-size: 1.8rem;
+         padding: 4px;
+         background: transparent;
+         border: none;
+         cursor: pointer;
+         
+      .close-icon{
+         display: none;
+      }
+   }
+}
 .container{
    height: 100vh;
    scroll-snap-type: y mandatory;
@@ -76,8 +125,13 @@ section{
             cursor: pointer;
          }
       }
-      .hamberger-menu{
-         border-top: 1px solid black;
+      .homepage-icons{
+         display: flex;
+         padding: 0rem 2rem;
+         div{
+            margin-left: 1rem;
+            cursor: pointer;
+         }
       }
    }
 
@@ -328,6 +382,7 @@ section{
             padding: 1rem;
             margin: 1rem;
             font-size: 1rem;
+            cursor: pointer;
          }
          .shop-btns__add-to-cart{
             color: $color-brown;

@@ -30,6 +30,70 @@ html {
   border: 3px solid antiquewhite;
 }
 
+#homepage .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.842);
+  list-style: none;
+  padding-top: 4rem;
+}
+
+#homepage .menu ul {
+  list-style: none;
+}
+
+#homepage .menu li {
+  margin: 2rem;
+}
+
+#homepage .menu a {
+  text-decoration: none;
+  color: #463232;
+  font-size: 3rem;
+}
+
+#homepage .show-menu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#homepage .hamburger-buttons {
+  position: fixed;
+  z-index: 100;
+  font-size: 1.8rem;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#homepage .hamburger-buttons .close-icon {
+  display: none;
+}
+
 .container {
   height: 100vh;
   -ms-scroll-snap-type: y mandatory;
@@ -97,8 +161,16 @@ section {
   cursor: pointer;
 }
 
-#homepage .homepage-header .hamberger-menu {
-  border-top: 1px solid black;
+#homepage .homepage-header .homepage-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem 2rem;
+}
+
+#homepage .homepage-header .homepage-icons div {
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
 #homepage nav {
@@ -452,6 +524,7 @@ section {
   padding: 1rem;
   margin: 1rem;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 #products .products-image-caption .products-image-caption__shop-btns .shop-btns__add-to-cart {

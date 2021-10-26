@@ -7,3 +7,35 @@ homepageRightSideIcon.addEventListener('click', function(){
    horizontalRow.classList.toggle('homepage-activeRow')
    homepageRigtSideText.classList.toggle('homepageRigtSideText-active')
 })
+
+
+    // ++-------------------++
+    // || hamburger   menu  ||
+    // ++-------------------++
+
+const menu = document.querySelector('.menu'),
+      menuItems = document.querySelectorAll('.menu-item'),
+      hamburger = document.querySelector('.hamburger-buttons'),
+      closeIcon = document.querySelector('.close-icon'),
+      menuIcon = document.querySelector('.menu-icon');
+
+
+function toggleMenu(){
+   if(menu.classList.contains('show-menu')){
+      menu.classList.remove('show-menu');
+      closeIcon.style.display = 'none';
+      menuIcon.style.display = 'block';
+   } else {
+      menu.classList.add('show-menu');
+      closeIcon.style.display = 'block';
+      menuIcon.style.display = 'none';
+   }
+}
+
+hamburger.addEventListener('click', toggleMenu);
+
+menuItems.forEach(
+   function(menuItem){
+      menuItem.addEventListener('click', toggleMenu)
+   }
+)
