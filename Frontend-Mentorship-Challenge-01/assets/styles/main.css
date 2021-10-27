@@ -1,0 +1,184 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1rem;
+  border: 1px solid gray;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+}
+
+#landing-page {
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#landing-page nav {
+  padding: 15rem;
+  font-size: 3rem;
+}
+
+#landing-page button {
+  border: none;
+  border-radius: 0rem 2rem 0rem 2rem;
+  background-color: rgba(255, 255, 255, 0.801);
+  padding: 2rem;
+  margin-left: 15rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#dream-your {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  padding: 3rem;
+}
+
+#dream-your h1 {
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+#dream-your .dream-your__first-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dream-your .dream-your__first-row .first-row-image {
+  width: 45rem;
+  height: 45rem;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  margin: 2rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+#dream-your .dream-your__first-row .dream-your__first-row-i1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.6))), url("../images/dream your.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/dream your.jpg");
+  background-position: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#dream-your .dream-your__first-row .dream-your__first-row-i1:hover {
+  background-image: url("../images/dream your.jpg");
+  width: 50rem;
+  height: 50rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#dream-your .dream-your__first-row .dream-your__first-row-i2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.6))), url("../images/dream your 2.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/dream your 2.jpg");
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#dream-your .dream-your__first-row .dream-your__first-row-i2:hover {
+  background-image: url("../images/dream your 2.jpg");
+  width: 50rem;
+  height: 50rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#dream-your .dream-your__first-row .dream-your__first-row-i3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.6))), url("../images/dream your 3.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6)), url("../images/dream your 3.jpg");
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#dream-your .dream-your__first-row .dream-your__first-row-i3:hover {
+  background-image: url("../images/dream your 3.jpg");
+  width: 50rem;
+  height: 50rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#dream-your .dream-your__first-row h1 {
+  position: absolute;
+  bottom: 5rem;
+  left: 4rem;
+}
+
+#dream-your .dream-your__second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#dream-your .dream-your__second-row img {
+  width: 143rem;
+  border-radius: .5rem;
+}
+/*# sourceMappingURL=main.css.map */

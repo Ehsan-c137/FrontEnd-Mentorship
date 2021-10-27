@@ -1,0 +1,142 @@
+// colors 
+$color-blue: #21628E;
+
+:root{
+   font-size: 62.5%;
+}
+html{
+   scroll-behavior: smooth;
+   font-family: sans-serif;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+   width: .8rem;              
+}
+
+::-webkit-scrollbar-track {
+   background: white;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: gray;   
+   border-radius: 1rem;      
+   border: 1px solid gray;  
+}
+
+main{
+   overflow-x: hidden;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 3rem;
+   font-size: 1.5rem;
+}
+
+#landing-page{
+    background-image: url(../images/hero.jpg);
+    background-position:center;
+    background-size: cover;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+
+    nav{
+       padding: 15rem;
+       font-size: 3rem;
+    }
+
+    button{
+       border: none;
+       border-radius: 0rem 2rem 0rem 2rem;
+       background-color: rgba(255, 255, 255, 0.801);
+       padding: 2rem;
+       margin-left: 15rem;
+       font-size: 3rem;
+       cursor: pointer;
+    }
+}
+
+#dream-your{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 3rem;
+
+    h1{
+       font-size: 4rem;
+       padding: 1rem;
+    }
+   .dream-your__first-row{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+      .first-row-image{
+         width: 45rem;
+         height: 45rem;
+         position: relative;
+         object-fit: cover;
+         background-position: center;
+         margin: 2rem;
+         border-radius: 1rem;
+         color: white;
+      }
+
+      .dream-your__first-row-i1{
+         background-image:linear-gradient(to bottom, transparent, rgba(0,0,0,0.6)), url('../images/dream\ your.jpg');
+         background-position: center;
+         transition: 1s;
+      }
+      .dream-your__first-row-i1:hover{
+         background-image:url('../images/dream\ your.jpg');
+         width: 50rem;
+         height: 50rem;
+         transition: 1s;
+      }
+
+      .dream-your__first-row-i2{
+         background-image:linear-gradient(to bottom, transparent, rgba(0,0,0,0.6)), url("../images/dream\ your\ 2.jpg");
+         transition: 1s;
+      }
+      .dream-your__first-row-i2:hover{
+         background-image: url("../images/dream\ your\ 2.jpg");
+         width: 50rem;
+         height: 50rem;
+         transition: 1s;
+      }
+
+      .dream-your__first-row-i3{
+         background-image:linear-gradient(to bottom, transparent, rgba(0,0,0,0.6)), url('../images/dream\ your\ 3.jpg');
+         transition: 1s;
+      }
+      .dream-your__first-row-i3:hover{
+         background-image:url('../images/dream\ your\ 3.jpg');
+         width: 50rem;
+         height: 50rem;
+         transition: 1s;
+      }
+      h1{
+         position: absolute;
+         bottom: 5rem;
+         left: 4rem;
+      }
+
+   }
+   .dream-your__second-row{
+      display: flex;
+      justify-content: center;
+      img{
+         width: 143rem;
+         border-radius: .5rem;
+      }
+   }
+}
