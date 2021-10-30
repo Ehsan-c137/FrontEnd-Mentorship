@@ -198,4 +198,72 @@ header {
   border-radius: 4rem;
   font-size: 2rem;
 }
+
+#more-to-explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem;
+  background-color: #FBF1ED;
+}
+
+#more-to-explore h1 {
+  font-size: 3rem;
+}
+
+#more-to-explore .more-to-explore__images-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#more-to-explore .more-to-explore__images-container .more-to-explore__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60rem;
+  width: 40rem;
+  margin: 3rem 4rem;
+  border-radius: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+#more-to-explore .more-to-explore__images-container .more-to-explore__images h1 {
+  margin: 2rem 0rem;
+}
+
+#more-to-explore .more-to-explore__images-container .more-to-explore__images p {
+  font-size: 2rem;
+}
+
+#more-to-explore .more-to-explore__images-container .more-to-explore__images img {
+  width: 37rem;
+  height: 37rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 2rem;
+  border-radius: .7rem;
+}
+
+footer {
+  height: 50vh;
+}
 /*# sourceMappingURL=main.css.map */
