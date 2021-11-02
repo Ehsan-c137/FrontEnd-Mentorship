@@ -781,6 +781,18 @@ section {
   opacity: 80%;
 }
 
+#customers-page .customers-page-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
 #customers-page .customers-page__quotes {
   display: -webkit-box;
   display: -ms-flexbox;

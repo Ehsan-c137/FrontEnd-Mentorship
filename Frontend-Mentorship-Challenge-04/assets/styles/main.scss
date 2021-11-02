@@ -548,6 +548,14 @@ section{
       }   
    }
 
+   .customers-page-btns{
+      display: flex;
+      justify-content: space-between;
+      width: 8rem;
+      font-size: 3rem;
+      cursor: pointer;
+   }
+
    .customers-page__quotes{
       display: flex;
       padding: 0rem 10rem;
