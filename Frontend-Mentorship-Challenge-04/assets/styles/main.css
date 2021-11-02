@@ -17,7 +17,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 1.3rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -27,7 +27,41 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: gray;
   border-radius: 2rem;
-  border: 3px solid antiquewhite;
+  border: 3px solid white;
+}
+
+button {
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container {
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-snap-align: start;
+  height: 100vh;
+  color: #463232;
+}
+
+#homepage {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/p1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: antiquewhite;
 }
 
 #homepage .menu {
@@ -94,34 +128,6 @@ html {
   display: none;
 }
 
-.container {
-  height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  scroll-snap-align: start;
-  height: 100vh;
-  color: #463232;
-}
-
-#homepage {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: url(../images/p1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-color: antiquewhite;
-}
-
 #homepage .homepage-header {
   width: 100vw;
   display: -webkit-box;
@@ -147,6 +153,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Raleway', sans-serif;
+  width: 65rem;
 }
 
 #homepage .homepage-header .homepage-header__center-item ul {
@@ -169,11 +176,12 @@ section {
 }
 
 #homepage .homepage-header .homepage-icons div {
-  margin-left: 1rem;
+  margin-left: 2rem;
   cursor: pointer;
 }
 
 #homepage nav {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +198,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem;
+  padding: 10rem 5rem;
 }
 
 #homepage .homepage__left-side {
@@ -236,15 +244,26 @@ section {
   margin-top: 2rem;
 }
 
+#homepage .homepage__left-side .homepage__view-detail-btn:hover {
+  background-color: transparent;
+  color: #463232;
+  border: 1px solid #463232;
+}
+
 #homepage .homepage__right-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2rem;
+  width: 60rem;
 }
 
 #homepage .homepage__right-side p {
   width: 30rem;
+  height: 3rem;
 }
 
 #homepage .homepage__right-side .horizontal-row {
@@ -311,7 +330,7 @@ section {
 }
 
 #some-of-our-lenders h3 {
-  margin-top: 3rem;
+  margin: 1.5rem;
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos {
@@ -355,7 +374,7 @@ section {
 }
 
 #some-of-our-lenders .some-of-our-lenders__logos img {
-  margin: 2rem 2rem;
+  margin: 2rem 4rem;
 }
 
 #about-us {
@@ -385,19 +404,19 @@ section {
 }
 
 #about-us .about-us__buy-now h1 {
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 #about-us .about-us__buy-now p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
-  width: 20rem;
+  width: 40rem;
 }
 
 #about-us .about-us__buy-now button {
   border: none;
   font-size: 2rem;
-  padding: .5rem;
+  padding: 1rem;
   margin-top: 2rem;
   background-color: #463232;
   color: white;
@@ -406,9 +425,17 @@ section {
   cursor: pointer;
 }
 
+#about-us .about-us__buy-now button:hover {
+  background-color: transparent;
+  color: #463232;
+  border: 1px solid #463232;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #about-us .about-us__buy-now .about-us__left-img {
-  width: 36rem;
-  height: 33rem;
+  width: 47rem;
+  height: 43rem;
   margin-top: 4rem;
 }
 
@@ -429,24 +456,30 @@ section {
 
 #about-us .about-us__texts-read-more .about-us__rigt-img {
   margin-top: 1rem;
-  width: 36rem;
-  height: 33rem;
+  width: 47rem;
+  height: 43rem;
 }
 
 #about-us .about-us__texts-read-more p {
   width: 36rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: 1rem;
 }
 
 #about-us .about-us__texts-read-more button {
   border: 1px solid #463232;
-  font-size: 2rem;
-  padding: .5rem;
+  font-size: 1.8rem;
+  padding: 1rem;
   margin-top: 2rem;
   background: transparent;
   color: #463232;
   cursor: pointer;
+}
+
+#about-us .about-us__texts-read-more button:hover {
+  background-color: #463232;
+  color: white;
+  border: 1px solid #463232;
 }
 
 #products {
@@ -533,10 +566,21 @@ section {
   border: 1px solid #463232;
 }
 
+#products .products-image-caption .products-image-caption__shop-btns .shop-btns__add-to-cart:hover {
+  background-color: #463232;
+  color: white;
+}
+
 #products .products-image-caption .products-image-caption__shop-btns .shop-btns__buy-now {
   background-color: #463232;
   border: none;
   color: whitesmoke;
+}
+
+#products .products-image-caption .products-image-caption__shop-btns .shop-btns__buy-now:hover {
+  background-color: transparent;
+  color: #463232;
+  border: 1px solid #463232;
 }
 
 #products .products-image-caption .products-left,
@@ -690,11 +734,17 @@ section {
 }
 
 #provides-page .provide-page-second-row .provide-page-second-row__text button {
-  border: none;
+  border: 1px solid #463232;
   padding: 1rem 3rem;
   background-color: #463232;
   color: white;
   margin-top: 2rem;
+}
+
+#provides-page .provide-page-second-row .provide-page-second-row__text button:hover {
+  background-color: transparent;
+  color: #463232;
+  border: 1px solid #463232;
 }
 
 #customers-page {

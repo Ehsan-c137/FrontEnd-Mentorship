@@ -1,85 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Didact+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+@import '_reset';
 
 $color-brown:  rgb(70,50,50);
 
-html{
-   scroll-behavior: smooth;
-   font-family: 'Didact Gothic', sans-serif;
-}
-:root{
-   font-size: 62.5%;
-}
-*{
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-}
 
-::-webkit-scrollbar {
-   width: 1rem;              
- }
- 
- ::-webkit-scrollbar-track {
-   background: white;
- }
- 
-::-webkit-scrollbar-thumb {
-   background-color: gray;   
-   border-radius: 2rem;      
-   border: 3px solid antiquewhite;  
- }
-
- #homepage{
-    
-    // ++-------------------++
-    // || hamburger   menu  ||
-    // ++-------------------++
-   .menu{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-       position: fixed;
-       transform: translateY(-100%);
-       transition: transform 0.2s;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       z-index: 99;
-       background: rgba(255, 255, 255, 0.842);
-       list-style: none;
-       padding-top: 4rem;
-       ul{
-          list-style: none;
-       }
-      li{
-         margin: 2rem;
-      }
-      a{ 
-         text-decoration: none;
-         color: $color-brown;
-         font-size: 3rem;
-      }
-   }
-      .show-menu{
-         transform: translateY(0);
-      }
-      .hamburger-buttons{
-         position: fixed;
-         z-index: 100;
-         font-size: 1.8rem;
-         padding: 4px;
-         background: transparent;
-         border: none;
-         cursor: pointer;
-         
-      .close-icon{
-         display: none;
-      }
-   }
-}
 .container{
    height: 100vh;
    scroll-snap-type: y mandatory;
@@ -95,6 +18,59 @@ section{
 }
 
 #homepage{
+       
+    // ++-------------------++
+    // || hamburger   menu  ||
+    // ++-------------------++
+    .menu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      transform: translateY(-100%);
+      transition: transform 0.2s;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      background: rgba(255, 255, 255, 0.842);
+      list-style: none;
+      padding-top: 4rem;
+      ul{
+         list-style: none;
+      }
+     li{
+        margin: 2rem;
+     }
+     a{ 
+        text-decoration: none;
+        color: $color-brown;
+        font-size: 3rem;
+     }
+  }
+     .show-menu{
+        transform: translateY(0);
+     }
+     .hamburger-buttons{
+        position: fixed;
+        z-index: 100;
+        font-size: 1.8rem;
+        padding: 4px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        
+     .close-icon{
+        display: none;
+     }
+  }
+
+// ++-----++
+// || end ||
+// ++-----++
+
    flex-direction: column;
    background-image: url(../images/p1.jpg);
    background-position: center;
@@ -115,7 +91,8 @@ section{
       }
       .homepage-header__center-item{
          display: flex;
-         font-family: 'Raleway', sans-serif;;
+         font-family: 'Raleway', sans-serif;
+         width: 65rem;
          ul {
              display: flex; 
          }
@@ -129,13 +106,14 @@ section{
          display: flex;
          padding: 0rem 2rem;
          div{
-            margin-left: 1rem;
+            margin-left: 2rem;
             cursor: pointer;
          }
       }
    }
 
    nav{
+      margin-top: 2rem;
       display: flex;
       justify-content: center;
       font-size: 6rem;
@@ -145,7 +123,7 @@ section{
    .homepage__content-container{
       display: flex;
       justify-content: space-between;
-      padding: 2rem
+      padding: 10rem 5rem;
    }
    .homepage__left-side{
       margin: 2rem 0rem 0rem 5rem;
@@ -181,14 +159,22 @@ section{
          padding: 1rem;
          margin-top: 2rem;
       }
+      .homepage__view-detail-btn:hover{
+         background-color: transparent;
+         color: $color-brown;
+         border: 1px solid $color-brown;
+      }
    }
 
    .homepage__right-side{
       display: flex;
+      align-items: center;
       font-size: 2rem;
 
+      width: 60rem;
       p{
          width: 30rem;
+         height: 3rem;
       }
       .horizontal-row{
          opacity: 0;
@@ -233,7 +219,7 @@ section{
    padding: 10rem;
    font-family: sans-serif;;
    h3{
-      margin-top: 3rem;
+      margin: 1.5rem;
    }
    .some-of-our-lenders__logos{
       display: flex;
@@ -264,7 +250,7 @@ section{
          margin-top: -1rem;
       }
       img{
-         margin: 2rem 2rem;
+         margin: 2rem 4rem;
       }
    }
 }
@@ -282,26 +268,32 @@ section{
       padding: 0rem 9rem; 
       
       h1{
-         font-size: 6rem;
+         font-size: 8rem;
       }
       p{
-         font-size: 2rem;
+         font-size: 2.5rem;
          margin-top: 1rem;
-         width: 20rem;
+         width: 40rem;
       }
       button{
          border: none;
          font-size: 2rem;
-         padding: .5rem;
+         padding: 1rem;
          margin-top: 2rem;
          background-color: $color-brown;
          color: white;
          box-shadow: .5rem 1.5rem 3rem rgba(0, 0, 0, 0.247);
          cursor: pointer;
       }
+      button:hover{
+         background-color: transparent;
+         color: $color-brown;
+         border: 1px solid $color-brown;
+         box-shadow: none;
+      }
       .about-us__left-img{
-         width: 36rem;
-         height: 33rem;
+         width: 47rem;
+         height: 43rem;
          margin-top: 4rem;
       }
    }
@@ -313,23 +305,27 @@ section{
       margin-left: 13rem;
       .about-us__rigt-img{
          margin-top: 1rem;
-         width: 36rem;
-         height: 33rem;
+         width: 47rem;
+         height: 43rem;
       }
       p{
          width: 36rem;
-         font-size: 1.5rem;
+         font-size: 1.8rem;
          margin-top: 1rem;
       }
       button{
          border: 1px solid $color-brown;
-         font-size: 2rem;
-         padding: .5rem;
+         font-size: 1.8rem;
+         padding: 1rem;
          margin-top: 2rem;
          background: transparent;
          color: $color-brown;
          cursor: pointer;
-
+      }
+      button:hover{
+         background-color: $color-brown;
+         color: white;
+         border: 1px solid $color-brown;
       }
    }
 }
@@ -389,10 +385,19 @@ section{
             background: transparent;
             border: 1px solid $color-brown;
          }
+         .shop-btns__add-to-cart:hover{
+            background-color: $color-brown;
+            color: white;
+         }
          .shop-btns__buy-now{
             background-color: $color-brown;
             border: none;
             color: whitesmoke;
+         }
+         .shop-btns__buy-now:hover{
+            background-color: transparent;
+            color: $color-brown;
+            border: 1px solid $color-brown;
          }
       }
 
@@ -504,11 +509,16 @@ section{
             font-size: 2rem;
          }
          button{
-            border: none;
+            border: 1px solid $color-brown;
             padding: 1rem 3rem;
             background-color: $color-brown;
             color: white;
             margin-top: 2rem;
+         }
+         button:hover{
+            background-color: transparent;
+            color: $color-brown;
+            border: 1px solid $color-brown;
          }
       }
    }

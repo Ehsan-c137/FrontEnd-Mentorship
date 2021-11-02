@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+
+html{
+   scroll-behavior: smooth;
+   font-family: 'Didact Gothic', sans-serif;
+}
+:root{
+   font-size: 62.5%;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+   width: 1.3rem;              
+ }
+ 
+ ::-webkit-scrollbar-track {
+   background: white;
+ }
+ 
+::-webkit-scrollbar-thumb {
+   background-color: gray;   
+   border-radius: 2rem;      
+   border: 3px solid white;  
+ }
+
+
+button{
+   cursor: pointer;
+   transition: 1s;
+}
