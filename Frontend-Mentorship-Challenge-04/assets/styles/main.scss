@@ -376,7 +376,7 @@ section{
          justify-content: center;
          margin-top: 2rem;
          button{
-            padding: 2rem;
+            padding: 1.5rem 2rem;
             margin: 1rem;
             font-size: 1.5rem;
             cursor: pointer;
@@ -512,13 +512,16 @@ section{
          }
          p{
             font-size: 2rem;
+            margin-top: 3rem;
          }
          button{
+            margin-top: 2rem;
+            padding: 1.5rem 3rem;
             border: 1px solid $color-brown;
-            padding: 1rem 3rem;
             background-color: $color-brown;
             color: white;
-            margin-top: 2rem;
+            font-size: 1.5rem;
+            
          }
          button:hover{
             background-color: transparent;
@@ -628,6 +631,8 @@ footer{
    width: 100%;
    position: relative;
 
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
    .footer-container__first-row{
       display: flex;
       justify-content: space-around;
@@ -647,13 +652,16 @@ footer{
          }
          p{
             font-size: 2rem;
+            margin-top: 2rem;
          }
          ul{
             list-style-type: none;
             margin-top: 2rem;
             li{
                font-size: 2rem;
-               opacity: 80%;
+               color: rgb(102, 102, 102);
+               margin: 0.5rem 0rem;
+               cursor: pointer;
             }
             .footer-go-to-up{
                margin-top: 1.5rem;

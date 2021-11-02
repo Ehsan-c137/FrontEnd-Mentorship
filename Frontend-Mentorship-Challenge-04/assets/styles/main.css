@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Didact+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap");
 html {
   scroll-behavior: smooth;
   font-family: 'Didact Gothic', sans-serif;
@@ -555,7 +556,7 @@ section {
 }
 
 #products .products-image-caption .products-image-caption__shop-btns button {
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   margin: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -739,14 +740,16 @@ section {
 
 #provides-page .provide-page-second-row .provide-page-second-row__text p {
   font-size: 2rem;
+  margin-top: 3rem;
 }
 
 #provides-page .provide-page-second-row .provide-page-second-row__text button {
+  margin-top: 2rem;
+  padding: 1.5rem 3rem;
   border: 1px solid #463232;
-  padding: 1rem 3rem;
   background-color: #463232;
   color: white;
-  margin-top: 2rem;
+  font-size: 1.5rem;
 }
 
 #provides-page .provide-page-second-row .provide-page-second-row__text button:hover {
@@ -885,6 +888,7 @@ footer {
   scroll-snap-align: start;
   width: 100%;
   position: relative;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 footer .footer-container__first-row {
@@ -921,6 +925,7 @@ footer .footer-container__first-row .footer-container__first-row-content h2 {
 
 footer .footer-container__first-row .footer-container__first-row-content p {
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 footer .footer-container__first-row .footer-container__first-row-content ul {
@@ -930,7 +935,9 @@ footer .footer-container__first-row .footer-container__first-row-content ul {
 
 footer .footer-container__first-row .footer-container__first-row-content ul li {
   font-size: 2rem;
-  opacity: 80%;
+  color: #666666;
+  margin: 0.5rem 0rem;
+  cursor: pointer;
 }
 
 footer .footer-container__first-row .footer-container__first-row-content ul .footer-go-to-up {
