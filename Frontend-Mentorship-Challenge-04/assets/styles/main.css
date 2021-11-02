@@ -17,7 +17,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 1.3rem;
+  width: 1.4rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -770,15 +770,6 @@ section {
   background-color: #fcf8f4;
 }
 
-#customers-page .customers-page__quotes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 #customers-page .customers-page__text h1 {
   font-size: 5rem;
 }
@@ -790,19 +781,18 @@ section {
   opacity: 80%;
 }
 
-#customers-page .customers-page__sample-container {
+#customers-page .customers-page__quotes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0rem 10rem;
+  margin-top: 4rem;
 }
 
-#customers-page .customers-page__sample-comment {
-  font-size: 2rem;
-  text-align: left;
-  margin-top: 4rem;
+#customers-page .customers-page__quotes .carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #customers-page .customers-page__sample {
@@ -812,11 +802,17 @@ section {
   width: 40rem;
   height: 40rem;
   padding: 3rem;
-  margin-top: 6rem;
+  margin: 7rem 5rem;
   background-color: white;
   position: relative;
   -webkit-box-shadow: -5px 5px 1rem rgba(0, 0, 0, 0.301);
           box-shadow: -5px 5px 1rem rgba(0, 0, 0, 0.301);
+}
+
+#customers-page .customers-page__sample .customers-page__sample-comment {
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 4rem;
 }
 
 #customers-page .customers-page__sample .customers-page__sample-stars,
@@ -917,11 +913,12 @@ footer .footer-container__first-row .footer-container__first-row-content p {
 
 footer .footer-container__first-row .footer-container__first-row-content ul {
   list-style-type: none;
+  margin-top: 2rem;
 }
 
 footer .footer-container__first-row .footer-container__first-row-content ul li {
   font-size: 2rem;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 footer .footer-container__first-row .footer-container__first-row-content ul .footer-go-to-up {

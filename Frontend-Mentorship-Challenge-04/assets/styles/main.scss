@@ -536,11 +536,6 @@ section{
    text-align: center;
    background-color: #fcf8f4;
    
-   .customers-page__quotes{
-      display: flex;
-      width: 100%;
-      justify-content: space-around;
-   }
    .customers-page__text{
       h1{
          font-size: 5rem;
@@ -552,26 +547,35 @@ section{
          opacity: 80%;
       }   
    }
-   .customers-page__sample-container{
-      display: flex;
-      justify-content: center;
 
-   }
-   .customers-page__sample-comment{
-      font-size: 2rem;
-      text-align: left;
+   .customers-page__quotes{
+      display: flex;
+      padding: 0rem 10rem;
       margin-top: 4rem;
+
+      
+      .carousel-slide{
+         display: flex;
+      }
    }
+
+
 
    .customers-page__sample{
       display: flex;
       width: 40rem;
       height: 40rem;
       padding: 3rem;
-      margin-top: 6rem;
+      margin: 7rem 5rem;
       background-color: white;
       position: relative;
       box-shadow: -5px 5px 1rem rgba(0, 0, 0, 0.301);
+
+      .customers-page__sample-comment{
+         font-size: 2rem;
+         text-align: left;
+         margin-top: 4rem;
+      }
 
       .customers-page__sample-stars,
       .customers-page__sample-comment,
@@ -638,9 +642,10 @@ footer{
          }
          ul{
             list-style-type: none;
+            margin-top: 2rem;
             li{
                font-size: 2rem;
-               opacity: 70%;
+               opacity: 80%;
             }
             .footer-go-to-up{
                margin-top: 1.5rem;

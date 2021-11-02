@@ -39,3 +39,42 @@ menuItems.forEach(
       menuItem.addEventListener('click', toggleMenu)
    }
 )
+
+// ++------------------------++
+// || customers Page slider  ||
+// ++------------------------++
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselItems = document.querySelectorAll('.customers-page__sample');
+
+// buttons
+const prevBtn = document.querySelector('#prev-btn');
+const nextBtn = document.querySelector('#next-btn');
+
+// counter 
+let counter = 1;
+const size = carouselItems[0].clientWidth;
+
+// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+// btn listeners
+nextBtn.addEventListener('click', function(){
+   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+   counter++;
+   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+});
+prevBtn.addEventListener('click', function(){
+   carouselSlide.style.transition = 'transform 0.4s ease-in-out';
+   counter--;
+   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+});
+
+carouselSlide.addEventListener('transitionend',function(){
+
+   if(carouselItems[counter].id === 'last-clone'){
+      carouselSlide.style.transition = 'none';
+      counter = carouselItems.length - counter - 3;
+      carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+   }
+})
