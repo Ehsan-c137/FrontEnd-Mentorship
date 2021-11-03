@@ -885,7 +885,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
+  height: 65vh;
   scroll-snap-align: start;
   width: 100%;
   position: relative;
