@@ -2,6 +2,7 @@
 
 $color-brown:  rgb(70,50,50);
 
+
 .container{
    height: 100vh;
    scroll-snap-type: y mandatory;
@@ -110,7 +111,7 @@ section{
          }
       }
    }
-   
+
    nav{
       margin-top: 2rem;
       display: flex;
@@ -125,7 +126,7 @@ section{
       padding: 10rem 5rem;
    }
    .homepage__left-side{
-      margin: -2rem 0rem 0rem 5rem;
+      margin: 2rem 0rem 0rem 5rem;
       width:35rem;
       font-size: 2.5rem;   
       
@@ -170,7 +171,7 @@ section{
       align-items: center;
       font-size: 2rem;
 
-      width: 48rem;
+      width: 60rem;
       p{
          width: 30rem;
          height: 3rem;
@@ -259,8 +260,7 @@ section{
    display: flex;
    justify-content: center;
    align-items: center;
-   scroll-margin-bottom: 50vh;
-
+   
    .about-us__buy-now{
       display: flex;
       flex-direction: column;
@@ -268,7 +268,7 @@ section{
       padding: 0rem 9rem; 
       
       h1{
-         font-size: 6rem;
+         font-size: 8rem;
       }
       p{
          font-size: 2.5rem;
@@ -292,8 +292,8 @@ section{
          box-shadow: none;
       }
       .about-us__left-img{
-         width: 45rem;
-         height: 41rem;
+         width: 47rem;
+         height: 43rem;
          margin-top: 4rem;
       }
    }
@@ -302,14 +302,14 @@ section{
       flex-direction: column;
       align-items: flex-start;
       padding: 2rem;
-      margin: 1rem 0rem 0rem 13rem;
+      margin-left: 13rem;
       .about-us__rigt-img{
          margin-top: 1rem;
-         width: 45rem;
-         height: 41rem;
+         width: 47rem;
+         height: 43rem;
       }
       p{
-         width: 45rem;
+         width: 36rem;
          font-size: 1.8rem;
          margin-top: 1rem;
       }
@@ -335,21 +335,21 @@ section{
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 157vh;
+   height: 130vh;
    padding-bottom: 3rem;
    scroll-margin-bottom: 50vh;
 
    h1{
       text-align: center;
-      font-size: 5rem;
+      font-size: 6rem;
       margin: 1rem;
    }
    h3{
       color: #255764;
-      font-size: 2rem;
+      font-size: 2.5rem;
    }
    .products-nav__text{
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin: .5rem;
    }
 
@@ -363,7 +363,7 @@ section{
          margin-top: 2rem;
 
          p{
-            font-size: 1.5rem;
+            font-size: 2rem;
          }
          .products-border{
             border-bottom: 1px solid black;
@@ -479,7 +479,7 @@ section{
       background-color: #FFFBF7;
       display: flex;
       justify-content: space-around;
-      font-size: 2rem;
+      font-size: 3rem;
       padding: 3rem 4rem;
       text-align: center;
       .provides-page-wrapper{
@@ -495,7 +495,7 @@ section{
       justify-content: center;
       align-items: center;
       padding: 0rem 15rem;
-      margin-top: 4rem;
+      margin-top: 10rem;
       
       img{
          box-shadow: antiquewhite -3rem 3rem 0rem;
@@ -534,14 +534,14 @@ section{
 
 #customers-page{
    flex-direction: column;
+   justify-content: center;
    align-items: center;
    text-align: center;
    background-color: #fcf8f4;
    
    .customers-page__text{
-      margin-top: 3rem;
       h1{
-         font-size: 4rem;
+         font-size: 5rem;
       }
       p{
          font-size: 2rem;
@@ -562,7 +562,7 @@ section{
    .customers-page__quotes{
       display: flex;
       padding: 0rem 10rem;
-
+      margin-top: 4rem;
 
       
       .carousel-slide{
@@ -574,8 +574,8 @@ section{
 
    .customers-page__sample{
       display: flex;
-      width: 34rem;
-      height: 33rem;
+      width: 40rem;
+      height: 40rem;
       padding: 3rem;
       margin: 7rem 5rem;
       background-color: white;
@@ -626,7 +626,7 @@ footer{
    justify-content: space-around;
    align-items: center;
 
-   height: 65vh;
+   height: 70vh;
    scroll-snap-align: start;
    width: 100%;
    position: relative;
