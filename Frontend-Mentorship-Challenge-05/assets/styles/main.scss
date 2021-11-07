@@ -1,4 +1,5 @@
 @import '_reset';
+@import '_fonts';
 
 
 body{
@@ -15,7 +16,7 @@ body{
 #container{
    display: flex;
    justify-content: center;
-   width: 70%;
+   height: 80%;
    box-shadow: -50px 120px 100px -100px #00000059;
 
    border:solid #edf0fa62;
@@ -26,15 +27,16 @@ body{
       display: flex;
       flex-direction: column;
       background-color: rgba(255, 255, 255, 0.253);
-      padding: 3rem 7rem;
+      width: 48vw;
+      padding: 4rem 10rem;
       h1{
          font-size: 5rem;
       }
       h2{
          font-size: 3rem;
       }
-      .p{
-         font-size: 2rem;
+      p{
+         font-size: 3rem;
          width: 100%;
       }
    }
@@ -43,19 +45,82 @@ body{
       display: flex;
       flex-direction: column;
       padding: 4rem;
-      width: 20rem;
       text-align: center;
       li{
          font-size: 3rem;
       }
    }
    #aside-left{
+      display: flex;
+      
       background-color: #d9afd91a;
       background-image: linear-gradient(0deg, #d9afd928 0%, #97dae118 100%);
       border-radius: 3rem 0rem 0rem 3rem;
+      width: 40rem;
+      padding: 4rem 6rem ;
+      i{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+         margin: 1.5rem 0rem;
+         
+         background-color: white;
+         color: #9193a8;
+         width: 6rem;
+         height: 6rem;
+         font-size: 3rem;
+      }
+      .aside-left-icon{
+         display: flex;
+         align-items: center;
+         margin: .5rem 0rem;
+         transition: 1s;
+      
+         p{
+            font-size: 2.2rem;
+            margin-left: 2rem;
+            cursor: pointer;
+            
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+         }
+      }
+      .aside-left-icon:hover{
+         padding: 1.3rem 0rem;
+         transition: 1s;
+      }
+      .aside-left-icon-first{
+         P{
+            cursor:default;
+            font-size: 2.5rem;
+         }
+         margin-bottom: 3rem;
+         i{
+            background: rgb(39,33,95);
+            background: linear-gradient(59deg, rgba(39,33,95,1) 0%, rgba(69,24,164,1) 70%);
+            color: white;
+            padding: 3.5rem;
+         }
+      }
+      .aside-left-icon-first:hover{
+         padding: 0rem;
+      }
+
    }
    #aside-right{
       background-color: #faf3f9dc;
       border-radius: 0rem 3rem 3rem 0rem;
+   }
+   .selected{
+      font-weight: 600;
+      text-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.438);
+      transition: none;
+   }
+   .selected-icon{
+      color: white !important;
+      background-color: rgb(39,33,95);
+      background: linear-gradient(59deg, rgba(39,33,95,1) 0%, rgba(69,24,164,1) 70%);
    }
 }

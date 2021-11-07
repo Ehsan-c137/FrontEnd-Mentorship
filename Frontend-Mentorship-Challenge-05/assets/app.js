@@ -1,0 +1,12 @@
+const selecting = document.querySelector('#aside-left')
+
+selecting.addEventListener('click',function(e){
+   const item = e.target;
+   const pItem  = item.parentNode;
+   if(item.tagName.toLowerCase() === 'p'){
+      selecting.querySelector('.selected').classList.remove('selected');
+      selecting.querySelector('.selected-icon').classList.remove('selected-icon');
+      item.classList.add('selected');
+      pItem.querySelector('i').classList.add('selected-icon')
+   }
+})

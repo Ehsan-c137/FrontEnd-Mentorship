@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 :root {
   font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -46,7 +48,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  height: 80%;
   -webkit-box-shadow: -50px 120px 100px -100px #00000059;
           box-shadow: -50px 120px 100px -100px #00000059;
   border: solid #edf0fa62;
@@ -63,7 +65,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: rgba(255, 255, 255, 0.253);
-  padding: 3rem 7rem;
+  width: 48vw;
+  padding: 4rem 10rem;
 }
 
 #container .container_main h1 {
@@ -74,8 +77,8 @@ body {
   font-size: 3rem;
 }
 
-#container .container_main .p {
-  font-size: 2rem;
+#container .container_main p {
+  font-size: 3rem;
   width: 100%;
 }
 
@@ -88,7 +91,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 4rem;
-  width: 20rem;
   text-align: center;
 }
 
@@ -97,14 +99,98 @@ body {
 }
 
 #container #aside-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #d9afd91a;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#d9afd928), to(#97dae118));
   background-image: linear-gradient(0deg, #d9afd928 0%, #97dae118 100%);
   border-radius: 3rem 0rem 0rem 3rem;
+  width: 40rem;
+  padding: 4rem 6rem;
+}
+
+#container #aside-left i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin: 1.5rem 0rem;
+  background-color: white;
+  color: #9193a8;
+  width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+}
+
+#container #aside-left .aside-left-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5rem 0rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#container #aside-left .aside-left-icon p {
+  font-size: 2.2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+#container #aside-left .aside-left-icon:hover {
+  padding: 1.3rem 0rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#container #aside-left .aside-left-icon-first {
+  margin-bottom: 3rem;
+}
+
+#container #aside-left .aside-left-icon-first P {
+  cursor: default;
+  font-size: 2.5rem;
+}
+
+#container #aside-left .aside-left-icon-first i {
+  background: #27215f;
+  background: linear-gradient(59deg, #27215f 0%, #4518a4 70%);
+  color: white;
+  padding: 3.5rem;
+}
+
+#container #aside-left .aside-left-icon-first:hover {
+  padding: 0rem;
 }
 
 #container #aside-right {
   background-color: #faf3f9dc;
   border-radius: 0rem 3rem 3rem 0rem;
+}
+
+#container .selected {
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+  -webkit-transition: none;
+  transition: none;
+}
+
+#container .selected-icon {
+  color: white !important;
+  background-color: #27215f;
+  background: linear-gradient(59deg, #27215f 0%, #4518a4 70%);
 }
 /*# sourceMappingURL=main.css.map */
