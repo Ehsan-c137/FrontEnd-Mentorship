@@ -23,7 +23,10 @@ body{
    border-width: 3px 0px 0px 3px;
    border-radius: 3rem;
    
-   .container_main{
+//  --------------
+// |main container|
+//  --------------
+.container_main{
       display: flex;
       flex-direction: column;
       background-color: rgba(255, 255, 255, 0.253);
@@ -39,8 +42,52 @@ body{
          font-size: 3rem;
          width: 100%;
       }
-   }
-
+      .container-main-searchbox{
+         display: flex;
+         align-items: center;
+         margin: 8rem 0rem 6rem -1rem;
+         padding: 0rem 3rem;
+         background-color: rgba(247, 247, 247, 0.849);
+         border: 2px solid white;
+         border-radius: 8rem;
+         i{
+            font-size: 3rem;
+            color: gray;
+            margin-right: 4rem;
+         }
+         input{
+            flex-grow: 2;
+            border: none;
+            outline: none;
+            font-size: 2.5rem;
+            background-color: transparent;
+         }
+         button{
+            border: none;
+            border-radius: 8rem;
+            padding: 2rem 3rem;
+            margin: 1rem -2rem;
+            font-size: 2.5rem;
+            color: white;
+            background: rgb(38,34,92);
+            background: linear-gradient(
+               51deg, #26225c 35%, #4719a6);
+         }
+      }
+      .container_main-text{
+         p{
+            padding: 2rem;
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.116);
+            border-radius: 1.5rem;
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+         }
+      }
+}
+//  --------------
+// |main container END|
+//  --------------
    aside{
       display: flex;
       flex-direction: column;
@@ -76,7 +123,7 @@ body{
          align-items: center;
          margin: .5rem 0rem;
          transition: 1s;
-      
+         opacity: 0.8;
          p{
             font-size: 2.2rem;
             margin-left: 2rem;
@@ -88,7 +135,7 @@ body{
          }
       }
       .aside-left-icon:hover{
-         padding: 1.3rem 0rem;
+         transform: translateX(1rem);
          transition: 1s;
       }
       .aside-left-icon-first{
@@ -105,7 +152,7 @@ body{
          }
       }
       .aside-left-icon-first:hover{
-         padding: 0rem;
+         transform: translateX(0rem);
       }
 
    }
@@ -117,10 +164,9 @@ body{
       font-weight: 600;
       text-shadow: 1px 1px 2px  rgba(0, 0, 0, 0.438);
       transition: none;
+      opacity: 1;
    }
    .selected-icon{
-      color: white !important;
-      background-color: rgb(39,33,95);
-      background: linear-gradient(59deg, rgba(39,33,95,1) 0%, rgba(69,24,164,1) 70%);
+      color: #5214cf !important;
    }
 }
