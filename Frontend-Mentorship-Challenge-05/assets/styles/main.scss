@@ -1,6 +1,6 @@
 @import '_reset';
 @import '_fonts';
-
+$myitem: '.container-main-searchbox';
 
 body{
    width: 100vw;
@@ -41,22 +41,36 @@ body{
          align-items: center;
          margin: 4rem 0rem 2rem -1rem;
          padding: 0rem 3rem;
-         background-color: rgba(247, 247, 247, 0.849);
+         background-color: #f6f1f5;
          border: 2px solid white;
          border-radius: 8rem;
+         transition: 1s;
+         &:focus {
+            background-color: white;
+         }
          i{
             font-size: 2rem;
             color: gray;
             margin-right: 3rem;
+            cursor: pointer;
          }
          input{
             flex-grow: 2;
             border: none;
             outline: none;
             font-size: 2rem;
+            margin: 0rem;
             background-color: transparent;
          }
          button{
+            &:hover{
+               box-shadow: none;
+               background: linear-gradient(
+                  51deg, #26225c 100%, #4719a6);
+               color: rgb(184, 184, 184);
+               transition: 2s;
+            }
+            
             border: none;
             border-radius: 8rem;
             padding: 1.5rem 3rem;
@@ -175,7 +189,7 @@ body{
       text-align: center;
    }
 
-   #aside-left{
+#aside-left{
       display: flex;
       
       background-color: #d9afd91a;
@@ -211,6 +225,7 @@ body{
             -moz-user-select: none;
             -khtml-user-select: none;
             -webkit-user-select: none;
+            user-select: none;
          }
       }
       .aside-left-icon:hover{
@@ -243,10 +258,70 @@ body{
       .selected-icon{
          color: #5214cf !important;
       }
+}
+
+#aside-right{
+   display: flex;
+   flex-direction: column;
+   background-color: #faf3f9dc;
+   border-radius: 0rem 3rem 3rem 0rem;
+
+   .account{
+      display: flex;
+      img{
+         width: 6rem;
+         height: 6rem;
+         border-radius: 50%;
+         margin-right: 1rem;
+      }
+   }
+   .user-name{
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      justify-content: center;
+      .user-name_first{
+         display: flex;
+         align-items: center;
+      }
+      h3{
+         margin-right: 2rem;
+         font-size: 1.5rem;
+      }
+      p{
+         font-size: 1.4rem;
+      }
+   }
+
+   .aside-right-filter{
+      margin-top: 5rem;
+      text-align: left;
       
+      input.checkbox{
+         padding: 2rem;
+         color: red;
+         background-color: red;
+      }
+      h2{
+         font-size: 2rem;
+      }
+      .aside-right-wrapper{
+         border-top: 2px solid rgb(226, 226, 226);
+         margin: 1rem 0rem 3rem 0rem;
+         width: 21rem;
+      }
+      
+      .filter-tags{
+         font-size: 1.5rem;
+         margin-top: 2rem;
+         
+         span{
+            color: gray;
+         }
+      }
+      .aside-right-type-work-text{
+         margin-top: 4rem;
+      }
    }
-   #aside-right{
-      background-color: #faf3f9dc;
-      border-radius: 0rem 3rem 3rem 0rem;
-   }
+}
 

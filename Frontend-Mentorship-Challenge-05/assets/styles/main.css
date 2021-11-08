@@ -83,15 +83,22 @@ body {
           align-items: center;
   margin: 4rem 0rem 2rem -1rem;
   padding: 0rem 3rem;
-  background-color: rgba(247, 247, 247, 0.849);
+  background-color: #f6f1f5;
   border: 2px solid white;
   border-radius: 8rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#container .container_main .container-main-searchbox:focus {
+  background-color: white;
 }
 
 #container .container_main .container-main-searchbox i {
   font-size: 2rem;
   color: gray;
   margin-right: 3rem;
+  cursor: pointer;
 }
 
 #container .container_main .container-main-searchbox input {
@@ -101,6 +108,7 @@ body {
   border: none;
   outline: none;
   font-size: 2rem;
+  margin: 0rem;
   background-color: transparent;
 }
 
@@ -115,6 +123,15 @@ body {
           box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.507);
   background: #26225c;
   background: linear-gradient(51deg, #26225c 35%, #4719a6);
+}
+
+#container .container_main .container-main-searchbox button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: linear-gradient(51deg, #26225c 100%, #4719a6);
+  color: #b8b8b8;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 #container .container_main .container_main-text p {
@@ -316,8 +333,9 @@ aside {
   margin-left: 2rem;
   cursor: pointer;
   -moz-user-select: none;
-  -khtml-user-select: none;
   -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 #aside-left .aside-left-icon:hover {
@@ -361,7 +379,95 @@ aside {
 }
 
 #aside-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #faf3f9dc;
   border-radius: 0rem 3rem 3rem 0rem;
+}
+
+#aside-right .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#aside-right .account img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+#aside-right .user-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#aside-right .user-name .user-name_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aside-right .user-name h3 {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+#aside-right .user-name p {
+  font-size: 1.4rem;
+}
+
+#aside-right .aside-right-filter {
+  margin-top: 5rem;
+  text-align: left;
+}
+
+#aside-right .aside-right-filter input.checkbox {
+  padding: 2rem;
+  color: red;
+  background-color: red;
+}
+
+#aside-right .aside-right-filter h2 {
+  font-size: 2rem;
+}
+
+#aside-right .aside-right-filter .aside-right-wrapper {
+  border-top: 2px solid #e2e2e2;
+  margin: 1rem 0rem 3rem 0rem;
+  width: 21rem;
+}
+
+#aside-right .aside-right-filter .filter-tags {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+#aside-right .aside-right-filter .filter-tags span {
+  color: gray;
+}
+
+#aside-right .aside-right-filter .aside-right-type-work-text {
+  margin-top: 4rem;
 }
 /*# sourceMappingURL=main.css.map */

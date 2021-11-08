@@ -10,3 +10,12 @@ selecting.addEventListener('click',function(e){
       pItem.querySelector('i').classList.add('selected-icon')
    }
 })
+
+const input = document.querySelector('.container-main-searchbox input');
+const backInput = document.querySelector('.container-main-searchbox');
+input.addEventListener('focus', function(){
+   backInput.style.backgroundColor = 'white';
+})
+input.addEventListener('blur', function(){
+   backInput.style.backgroundColor = '#f6f1f5';
+})
