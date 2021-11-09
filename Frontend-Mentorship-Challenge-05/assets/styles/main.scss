@@ -22,7 +22,7 @@ body{
    border:solid #edf0fa62;
    border-width: 3px 0px 0px 3px;
    border-radius: 3rem;
-   overflow-y: hidden;
+   overflow-y: none;
 //  --------------
 // |main container|
 //  --------------
@@ -32,6 +32,7 @@ body{
       background-color: rgba(255, 255, 255, 0.253);
       width: 48vw;
       padding: 4rem 10rem;
+     
       h1{
          font-size: 2rem;
       }
@@ -97,13 +98,15 @@ body{
    .job-lists{
       display: flex;
       flex-direction: column;
-
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      margin-top: 2rem;
       .job{
-         margin-bottom: 1rem;
+
          background-color: white;
          padding: 2.5rem;
          border-radius: 2rem;
-         margin: 2rem 0rem .5rem 0rem;
+         margin: 1rem 1rem .5rem 0rem;
       }
       .job-status{
          display: flex;
