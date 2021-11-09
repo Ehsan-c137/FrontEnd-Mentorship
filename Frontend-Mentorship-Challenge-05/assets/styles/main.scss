@@ -221,7 +221,7 @@ body{
             font-size: 1.7rem;
             margin-left: 2rem;
             cursor: pointer;
-            
+            transition: 1s;
             -moz-user-select: none;
             -khtml-user-select: none;
             -webkit-user-select: none;
@@ -231,6 +231,10 @@ body{
       .aside-left-icon:hover{
          transform: translateX(1rem);
          transition: 1s;
+         p{
+            font-size: 2rem;
+            transition: 1s;
+         }
       }
       .aside-left-icon-first{
          P{

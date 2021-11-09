@@ -332,6 +332,8 @@ aside {
   font-size: 1.7rem;
   margin-left: 2rem;
   cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -341,6 +343,12 @@ aside {
 #aside-left .aside-left-icon:hover {
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#aside-left .aside-left-icon:hover p {
+  font-size: 2rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
