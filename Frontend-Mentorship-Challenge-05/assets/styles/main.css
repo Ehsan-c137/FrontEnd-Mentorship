@@ -171,7 +171,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: smooth;
   margin-top: 2rem;
 }
@@ -418,12 +418,14 @@ aside {
           flex-direction: column;
   background-color: #faf3f9dc;
   border-radius: 0rem 3rem 3rem 0rem;
+  z-index: 0;
 }
 
 #aside-right .account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #aside-right .account img {
@@ -431,6 +433,46 @@ aside {
   height: 6rem;
   border-radius: 50%;
   margin-right: 1rem;
+}
+
+#aside-right .account i {
+  cursor: pointer;
+}
+
+#aside-right .profile-modal {
+  display: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#aside-right .profile-modal-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  top: 7rem;
+  padding: 6rem 6rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.159);
+          box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.159);
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+  -webkit-animation: upToDawn 2s;
+          animation: upToDawn 2s;
+}
+
+#aside-right .profile-modal-active h1 {
+  margin: 0.5rem 0rem;
+  cursor: pointer;
 }
 
 #aside-right .user-name {
@@ -499,5 +541,31 @@ aside {
 
 #aside-right .aside-right-filter .aside-right-type-work-text {
   margin-top: 4rem;
+}
+
+@-webkit-keyframes upToDawn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes upToDawn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
 }
 /*# sourceMappingURL=main.css.map */

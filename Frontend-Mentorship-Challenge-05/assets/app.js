@@ -19,3 +19,10 @@ input.addEventListener('focus', function(){
 input.addEventListener('blur', function(){
    backInput.style.backgroundColor = '#f6f1f5';
 })
+
+
+const profileAIcon = document.querySelector('.user-name_first i');
+const accountContainer = document.querySelector('.profile-modal')
+profileAIcon.addEventListener('click',function(){
+   accountContainer.classList.toggle('profile-modal-active')
+})
