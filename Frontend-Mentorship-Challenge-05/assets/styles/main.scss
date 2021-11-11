@@ -63,6 +63,9 @@ body{
             margin: 0rem;
             background-color: transparent;
          }
+         #search-suggestions{
+            background-color: rgba(245, 245, 245, 0.426);
+         }
          button{
             &:hover{
                box-shadow: none;

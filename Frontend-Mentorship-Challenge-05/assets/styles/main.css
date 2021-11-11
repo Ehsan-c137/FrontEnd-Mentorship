@@ -132,6 +132,10 @@ body {
   background-color: transparent;
 }
 
+#container .container_main .container-main-searchbox #search-suggestions {
+  background-color: rgba(245, 245, 245, 0.426);
+}
+
 #container .container_main .container-main-searchbox button {
   border: none;
   border-radius: 8rem;

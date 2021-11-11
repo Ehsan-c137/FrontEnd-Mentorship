@@ -47,7 +47,15 @@
       <h1>Looking for work</h1>
       <form action="#" tabindex="1" class="container-main-searchbox">
         <i class="fas fa-search"></i>
-        <input type="text" placeholder="job title or keyword">
+        <input type="text" list='search-suggestions' placeholder="job title or keyword">
+        <datalist id="search-suggestions">
+          <option> react</option>
+          <option> angular</option>
+          <option> react native</option>
+          <option> ios</option>
+          <option> data science</option>
+
+        </datalist>
         <button>Looking for a job</button>
      </form>
       <div class="container_main-text">
