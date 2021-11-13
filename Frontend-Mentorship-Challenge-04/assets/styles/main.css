@@ -37,8 +37,8 @@ button {
   transition: 1s;
 }
 
-.container {
-  height: 100vh;
+body {
+  width: 100vw;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
@@ -323,7 +323,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 25%;
+  height: 24vh;
   background-color: antiquewhite;
   font-size: 3rem;
   padding: 10rem;
@@ -940,18 +940,6 @@ footer .footer-container__first-row .footer-container__first-row-content ul li {
   cursor: pointer;
 }
 
-footer .footer-container__first-row .footer-container__first-row-content ul .footer-go-to-up {
-  margin-top: 1.5rem;
-}
-
-footer .footer-container__first-row .footer-container__first-row-content ul .footer-go-to-up a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 0.7rem;
-  font-size: 1.5rem;
-}
-
 footer .footer-container__first-row .footer-container__first-row-content .footer__wildling-text {
   width: 30rem;
 }
@@ -995,6 +983,37 @@ footer .footer-container__second-row p {
   opacity: 60%;
 }
 
+#go-to-top {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  font-size: 3rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 2.3rem;
+  border-radius: 50%;
+  background-color: rgba(70, 50, 50, 0.384);
+  color: white;
+  cursor: pointer;
+  z-index: 98;
+}
+
+.go-to-top-active {
+  opacity: 1 !important;
+  -webkit-animation: moveInTop 1.5s ease-out;
+          animation: moveInTop 1.5s ease-out;
+}
+
 @-webkit-keyframes moveInRight {
   0% {
     opacity: 0;
@@ -1018,6 +1037,32 @@ footer .footer-container__second-row p {
     opacity: 1;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=main.css.map */

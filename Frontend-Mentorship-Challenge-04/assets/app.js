@@ -9,9 +9,7 @@ homepageRightSideIcon.addEventListener('click', function(){
 })
 
 
-    // ++-------------------++
-    // || hamburger   menu  ||
-    // ++-------------------++
+// hamburger   menu
 
 const menu = document.querySelector('.menu'),
       menuItems = document.querySelectorAll('.menu-item'),
@@ -40,20 +38,16 @@ menuItems.forEach(
    }
 )
 
-// ++------------------------++
-// || customers Page slider  ||
-// ++------------------------++
+
+// customers Page slider 
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselItems = document.querySelectorAll('.customers-page__sample');
-
 // buttons
 const prevBtn = document.querySelector('#prev-btn');
 const nextBtn = document.querySelector('#next-btn');
-
 // counter 
 let counter = 1;
 const size = carouselItems[0].clientWidth;
-
 // carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 // btn listeners
@@ -78,3 +72,27 @@ carouselSlide.addEventListener('transitionend',function(){
       carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
    }
 })
+
+// || customers Page slider end ||
+
+
+// GO TO TOP (LANDING PAGE) BUTTON 
+
+const goToTopBtn = document.getElementById('go-to-top');
+goToTopBtn.addEventListener('click',function(){
+   document.getElementById('homepage').scrollIntoView({
+      behavior: 'smooth'
+    });
+})
+
+window.addEventListener("scroll",()=>{
+   let scroll = window.scrollY;
+   if(scroll > 600){
+      goToTopBtn.classList.add('go-to-top-active')
+   } else {
+      goToTopBtn.classList.remove('go-to-top-active')
+   }
+});
+
+// GO TO TOP (LANDING PAGE) BUTTON   END
+
