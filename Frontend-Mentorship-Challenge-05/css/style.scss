@@ -2,7 +2,7 @@
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 3rem 0rem;
   color: white;
   font-family: "Lato", sans-serif;
@@ -12,6 +12,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-right: 4rem;
 }
 #show-api-list {
   text-align: center;

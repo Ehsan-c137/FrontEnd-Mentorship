@@ -85,8 +85,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 3rem 0rem;
   color: white;
   font-family: "Lato", sans-serif;
@@ -101,6 +102,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-right: 4rem;
 }
 
 #show-api-list {
