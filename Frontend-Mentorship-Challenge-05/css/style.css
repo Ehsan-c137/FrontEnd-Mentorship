@@ -1,0 +1,198 @@
+::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+::-webkit-scrollbar-button {
+  height: 8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #dadada;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 1rem;
+  border: 3px solid transparent;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-size: 1.2rem;
+}
+
+/* Remove default margin */
+body,
+main,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3rem 0rem;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+#api {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#show-api-list {
+  text-align: center;
+  color: black;
+}
+
+.content-table {
+  display: block;
+  overflow: auto;
+  max-height: 70vh;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.content-table thead {
+  background: #bdc3c7;
+}
+
+.content-table tbody {
+  color: black;
+}
+
+.content-table th,
+.content-table td {
+  padding: 0.8rem 1rem;
+}
+
+.content-table th:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.content-table th:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.content-table button {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  color: white;
+  cursor: pointer;
+}
+
+.content-table .del-btn {
+  background-color: #c32f27;
+}
+
+.content-table .edit-btn {
+  background-color: #087f8c;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2em 0rem;
+  color: black;
+}
+
+input {
+  background-color: #ebebeb;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background-color: #a30b37;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #ce073f;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
