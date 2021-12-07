@@ -11,6 +11,7 @@ main {
 #api {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 #show-api-list {
   text-align: center;
@@ -71,6 +72,10 @@ main {
   flex-direction: column;
   margin: 2em 0rem;
   color: black;
+
+  label {
+    text-align: left;
+  }
 }
 
 input {

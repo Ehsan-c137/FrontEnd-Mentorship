@@ -100,6 +100,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 #show-api-list {
@@ -167,6 +168,10 @@ main {
           flex-direction: column;
   margin: 2em 0rem;
   color: black;
+}
+
+.form-group label {
+  text-align: left;
 }
 
 input {
