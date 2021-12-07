@@ -129,6 +129,10 @@ main {
   color: black;
 }
 
+.content-table th {
+  font-size: 0.9rem;
+}
+
 .content-table th,
 .content-table td {
   padding: 0.8rem 1rem;
