@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #eef0ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  margin: 2rem 0rem;
+  background-color: white;
+  padding: 3rem;
+  min-width: 55vw;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.158);
+          box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.158);
+}
+
+i {
+  font-size: 2rem;
+  color: #5f64a5;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  color: #5f64a5;
+}
+
+#header .header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#header form {
+  -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.158);
+          box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.158);
+  border: 1px solid rgba(128, 128, 128, 0.096);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 4rem;
+}
+
+#header form:focus-within {
+  outline: 1px solid gray;
+}
+
+#header form input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.7rem;
+}
+
+#first-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 30vh;
+  height: 50%;
+  padding: 3rem;
+  margin: 2rem 0rem;
+  background-image: url(../images/flower.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.329);
+          box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.329);
+}
+
+#first-container .first-container__overal-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+#first-container .first-container__overal-left img {
+  width: 5rem;
+  height: 5rem;
+}
+
+#first-container .first-container__overal-left h1 {
+  display: inline-block;
+  line-height: 9rem;
+  font-size: 11rem;
+  margin-bottom: 1rem;
+}
+
+#first-container .first-container__overal-left p {
+  font-size: 2rem;
+}
+
+#first-container .first-container__overal-right {
+  text-align: right;
+}
+
+#first-container .first-container__overal-right h3 {
+  font-size: 3rem;
+}
+
+#first-container .first-container__overal-right p {
+  font-size: 2rem;
+}
+
+#second-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#second-container img {
+  width: 5rem;
+  height: 5rem;
+}
+
+#second-container .second-container__left-first-row,
+#second-container .second-container__left-second-row {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.308);
+          box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.308);
+  border: 1px solid rgba(128, 128, 128, 0.171);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#second-container .second-container__humidity,
+#second-container .second-container__UV,
+#second-container .second-container__sunset,
+#second-container .second-container__sunrise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#second-container .second-container__left-text {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+#second-container .second-container__left-second-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  background: #99b1fa;
+  background: -webkit-gradient(linear, left top, right top, from(#99b1fa), to(#7c90fe));
+  background: linear-gradient(90deg, #99b1fa 0%, #7c90fe 100%);
+}
+
+#second-container .second-container__left-second-row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=main.css.map */
