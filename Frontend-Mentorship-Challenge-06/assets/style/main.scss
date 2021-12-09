@@ -1,19 +1,50 @@
 @import "_reset";
+@import "_mixins";
 
 body {
    background-color: #eef0ff;
    display: flex;
    justify-content: center;
    align-items: center;
+   height: 100vh;
 }
-
-main {
-   margin: 2rem 0rem;
+// TODO be main contaienr boxshadow dakheli bede
+// TODO fix the modal window
+#main-container {
+   overflow: hidden;
    background-color: white;
    padding: 3rem;
    min-width: 55vw;
    border-radius: 1rem;
-   box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.158);
+   box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.267),
+      inset 0rem 0rem 20rem 0px rgba(177, 177, 177, 0.178);
+   border: 1px solid rgba(128, 128, 128, 0.171);
+}
+
+.main-container-sub {
+   position: relative;
+   transition: 2s all;
+}
+.show-menu {
+   transform: translate(-100%, 0%);
+}
+
+#menu-container {
+   display: flex;
+   @include flex-center;
+   position: absolute;
+   transform: translate(100%, -100%);
+
+   transition: 2s all;
+   height: 100%;
+   width: 100%;
+   margin: 0rem 3rem;
+   border-radius: 1rem;
+
+   background-color: #e4c9c7;
+   color: white;
+   font-size: 3rem;
+   text-align: center;
 }
 
 i {
@@ -39,7 +70,7 @@ i {
       &:focus-within {
          outline: 1px solid gray;
       }
-      box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.158);
+      box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.205);
       border: 1px solid rgba(128, 128, 128, 0.096);
       border-radius: 1rem;
       padding: 1rem;
@@ -60,6 +91,7 @@ i {
    align-items: flex-end;
    min-height: 30vh;
    height: 50%;
+   width: 100%;
    padding: 3rem;
    margin: 2rem 0rem;
 
@@ -70,7 +102,7 @@ i {
    text-shadow: 1px 1px 1px black;
 
    border-radius: 1rem;
-   box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.329);
+   box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.445);
    .first-container__overal-left {
       display: flex;
       flex-direction: column;
@@ -112,7 +144,7 @@ i {
    .second-container__left-second-row {
       background-color: white;
       display: flex;
-      box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.308);
+      box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.411);
       border: 1px solid rgba(128, 128, 128, 0.171);
       border-radius: 1rem;
       padding: 1rem;
