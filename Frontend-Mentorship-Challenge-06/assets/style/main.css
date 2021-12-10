@@ -72,13 +72,13 @@ body {
 
 .main-container-sub {
   position: relative;
-  -webkit-transition: 2s all;
-  transition: 2s all;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .show-menu {
-  -webkit-transform: translate(-100%, 0%);
-          transform: translate(-100%, 0%);
+  -webkit-transform: translate(-53%, 0%);
+          transform: translate(-53%, 0%);
 }
 
 .modal-hamburger-open {
@@ -108,12 +108,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  -webkit-transform: translate(100%, -100%);
-          transform: translate(100%, -100%);
-  -webkit-transition: 2s all;
-  transition: 2s all;
+  -webkit-transform: translate(200%, -100%);
+          transform: translate(200%, -100%);
+  -webkit-transition: 2s;
+  transition: 2s;
   height: 100%;
-  width: 100%;
+  width: 50%;
   margin: 0rem 3rem;
   border-radius: 1rem;
   background-color: #e4c9c7;
@@ -161,10 +161,13 @@ i {
   border-radius: 1rem;
   padding: 1rem;
   margin-right: 4rem;
+  -webkit-transition: 1.5s all;
+  transition: 1.5s all;
 }
 
 #header form:focus-within {
   outline: 1px solid gray;
+  padding: 1rem 2rem;
 }
 
 #header form input {
@@ -213,6 +216,15 @@ i {
 #first-container .first-container__overal-left img {
   width: 5rem;
   height: 5rem;
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+
+#first-container .first-container__overal-left img:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 #first-container .first-container__overal-left h1 {
@@ -242,6 +254,9 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #second-container img {
@@ -307,5 +322,9 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#myChart {
+  width: 32vw;
 }
 /*# sourceMappingURL=main.css.map */

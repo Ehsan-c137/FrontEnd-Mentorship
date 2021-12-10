@@ -22,11 +22,11 @@ body {
 
 .main-container-sub {
    position: relative;
-   transition: 2s all;
+   transition: 2s;
 }
 
 .show-menu {
-   transform: translate(-100%, 0%);
+   transform: translate(-53%, 0%);
 }
 .modal-hamburger-open {
    display: block;
@@ -45,11 +45,11 @@ body {
    display: flex;
    @include flex-center;
    position: absolute;
-   transform: translate(100%, -100%);
+   transform: translate(200%, -100%);
 
-   transition: 2s all;
+   transition: 2s;
    height: 100%;
-   width: 100%;
+   width: 50%;
    margin: 0rem 3rem;
    border-radius: 1rem;
 
@@ -81,13 +81,14 @@ i {
    form {
       &:focus-within {
          outline: 1px solid gray;
+         padding: 1rem 2rem;
       }
       box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.205);
       border: 1px solid rgba(128, 128, 128, 0.096);
       border-radius: 1rem;
       padding: 1rem;
       margin-right: 4rem;
-
+      transition: 1.5s all;
       input {
          background-color: transparent;
          border: none;
@@ -121,8 +122,13 @@ i {
       text-align: left;
 
       img {
+         &:hover {
+            transform: rotate(180deg);
+            transition: 2s all;
+         }
          width: 5rem;
          height: 5rem;
+         transition: 2s all;
       }
       h1 {
          display: inline-block;
@@ -147,7 +153,7 @@ i {
 
 #second-container {
    display: flex;
-
+   justify-content: space-between;
    img {
       width: 5rem;
       height: 5rem;
@@ -195,4 +201,8 @@ i {
          flex-direction: column;
       }
    }
+}
+
+#myChart {
+   width: 32vw;
 }
