@@ -81,6 +81,22 @@ body {
           transform: translate(-100%, 0%);
 }
 
+.modal-hamburger-open {
+  display: block;
+}
+
+.modal-hamburger-open-hidden {
+  display: none;
+}
+
+.close-ham-btn {
+  display: none;
+}
+
+.show-close-btn {
+  display: block;
+}
+
 #menu-container {
   display: -webkit-box;
   display: -ms-flexbox;

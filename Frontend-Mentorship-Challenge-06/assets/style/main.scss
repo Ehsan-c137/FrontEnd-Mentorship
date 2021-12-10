@@ -8,8 +8,7 @@ body {
    align-items: center;
    height: 100vh;
 }
-// TODO be main contaienr boxshadow dakheli bede
-// TODO fix the modal window
+
 #main-container {
    overflow: hidden;
    background-color: white;
@@ -25,8 +24,21 @@ body {
    position: relative;
    transition: 2s all;
 }
+
 .show-menu {
    transform: translate(-100%, 0%);
+}
+.modal-hamburger-open {
+   display: block;
+}
+.modal-hamburger-open-hidden {
+   display: none;
+}
+.close-ham-btn {
+   display: none;
+}
+.show-close-btn {
+   display: block;
 }
 
 #menu-container {
