@@ -45,6 +45,33 @@ picture {
   display: block;
 }
 
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.first-container__overal-left img:hover {
+  -webkit-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite;
+}
+
 body {
   background-color: #eef0ff;
   display: -webkit-box;
@@ -216,13 +243,6 @@ i {
 #first-container .first-container__overal-left img {
   width: 5rem;
   height: 5rem;
-  -webkit-transition: 2s all;
-  transition: 2s all;
-}
-
-#first-container .first-container__overal-left img:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   -webkit-transition: 2s all;
   transition: 2s all;
 }

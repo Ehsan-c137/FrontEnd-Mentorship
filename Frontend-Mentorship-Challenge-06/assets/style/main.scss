@@ -1,5 +1,6 @@
 @import "_reset";
 @import "_mixins";
+@import "_animations";
 
 body {
    background-color: #eef0ff;
@@ -122,10 +123,6 @@ i {
       text-align: left;
 
       img {
-         &:hover {
-            transform: rotate(180deg);
-            transition: 2s all;
-         }
          width: 5rem;
          height: 5rem;
          transition: 2s all;
