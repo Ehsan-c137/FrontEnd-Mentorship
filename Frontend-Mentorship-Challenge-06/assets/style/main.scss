@@ -14,7 +14,7 @@ body {
    overflow: hidden;
    background-color: white;
    padding: 3rem;
-   min-width: 55vw;
+   min-width: 63vw;
    border-radius: 1rem;
    box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.267),
       inset 0rem 0rem 20rem 0px rgba(177, 177, 177, 0.178);
@@ -150,6 +150,7 @@ i {
 
 #second-container {
    display: flex;
+   align-items: center;
    justify-content: space-between;
    img {
       width: 5rem;
@@ -200,6 +201,10 @@ i {
    }
 }
 
-#myChart {
-   width: 32vw;
+.chart-container {
+   position: relative;
+   width: 60%;
 }
+// #myChart {
+//    width: 32vw;
+// }
