@@ -70,6 +70,13 @@ picture {
 .first-container__overal-left img:hover {
   -webkit-animation: rotating 3s linear infinite;
   animation: rotating 3s linear infinite;
+  width: 6rem !important;
+  height: 6rem !important;
+}
+
+.first-container__overal-left img:active {
+  -webkit-animation: none;
+          animation: none;
 }
 
 body {

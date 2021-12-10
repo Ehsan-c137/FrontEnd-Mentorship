@@ -32,4 +32,9 @@
    -ms-animation: rotating 3s linear infinite;
    -o-animation: rotating 3s linear infinite;
    animation: rotating 3s linear infinite;
+   width: 6rem !important;
+   height: 6rem !important;
+}
+.first-container__overal-left img:active {
+   animation: none;
 }
