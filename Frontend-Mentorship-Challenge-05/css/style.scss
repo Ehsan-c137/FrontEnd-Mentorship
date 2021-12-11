@@ -1,108 +1,124 @@
 @import "_reset";
 
 main {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0rem;
-  color: white;
-  font-family: "Lato", sans-serif;
+   display: flex;
+   justify-content: center;
+   padding: 3rem 0rem;
+   color: white;
+   font-family: "Lato", sans-serif;
 }
 
 #api {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-right: 4rem;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-right: 4rem;
 }
 #show-api-list {
-  text-align: center;
-  color: black;
+   text-align: center;
+   color: black;
 }
 
 .content-table {
-  display: block;
-  overflow: auto;
-  max-height: 70vh;
-  padding: 1rem;
-  margin-top: 1rem;
+   display: block;
+   overflow: auto;
+   max-height: 70vh;
+   padding: 1rem;
+   margin-top: 1rem;
 
-  border-spacing: 0px;
-  border-collapse: collapse;
-  border-radius: 1rem;
+   border-spacing: 0px;
+   border-collapse: collapse;
+   border-radius: 1rem;
 
-  text-align: center;
-  background-color: rgb(240, 240, 240);
+   text-align: center;
+   background-color: rgb(240, 240, 240);
 
-  thead {
-    background: #bdc3c7;
-  }
+   thead {
+      background: #bdc3c7;
+   }
 
-  tbody {
-    color: black;
-  }
+   tbody {
+      &:nth-child(odd) {
+         background-color: rgba(196, 196, 196, 0.315);
+      }
+      color: black;
+   }
 
-  th {
-    font-size: 0.9rem;
-  }
-  th,
-  td {
-    padding: 0.8rem 1rem;
-  }
-  th:first-child {
-    border-radius: 8px 0px 0px 8px;
-  }
-  th:last-child {
-    border-radius: 0px 8px 8px 0px;
-  }
+   th {
+      font-size: 0.9rem;
+   }
+   th,
+   td {
+      &:hover {
+         background-color: #bdc3c7;
+      }
 
-  button {
-    border: none;
-    border-radius: 0.2rem;
-    padding: 0.4rem;
-    color: white;
-    cursor: pointer;
-  }
+      &:first-child {
+         border-radius: 8px 0px 0px 8px;
+      }
+      &:last-child {
+         border-radius: 0px 8px 8px 0px;
+      }
+      padding: 0.8rem 1rem;
+   }
+   th:first-child {
+      border-radius: 8px 0px 0px 8px;
+   }
+   th:last-child {
+      border-radius: 0px 8px 8px 0px;
+   }
 
-  .del-btn {
-    background-color: #c32f27;
-  }
-  .edit-btn {
-    background-color: #087f8c;
-  }
+   button {
+      border: none;
+      border-radius: 0.2rem;
+      padding: 0.4rem;
+      color: white;
+      cursor: pointer;
+   }
+
+   .del-btn {
+      background-color: #c32f27;
+   }
+   .edit-btn {
+      background-color: #087f8c;
+   }
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  margin: 2em 0rem;
-  color: black;
+   display: flex;
+   flex-direction: column;
+   margin: 2em 0rem;
+   color: black;
 
-  label {
-    text-align: left;
-  }
+   label {
+      text-align: left;
+   }
 }
 
 input {
-  background-color: #ebebeb;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+   background-color: #ebebeb;
+   padding: 0.8rem 1.5rem;
+   border: none;
+   border-radius: 0.5rem;
+   font-size: 1rem;
 }
 .btn-primary {
-  padding: 1rem 2rem;
-  margin: 1rem;
-  border: none;
-  border-radius: 0.6rem;
-  font-weight: bold;
-  font-size: 0.8rem;
-  transition: 300ms;
-  background-color: #a30b37;
-  color: white;
+   padding: 1rem 2rem;
+   margin: 1rem;
+   border: none;
+   border-radius: 0.6rem;
+   font-weight: bold;
+   font-size: 0.8rem;
+   transition: 300ms;
+   background-color: #a30b37;
+   color: white;
 }
 
 .btn-primary:hover {
-  background: #ce073f;
-  color: white;
-  cursor: pointer;
+   background: #ce073f;
+   cursor: pointer;
+}
+.form-completed {
+   background-color: #225f20 !important;
+   padding: 6rem;
 }

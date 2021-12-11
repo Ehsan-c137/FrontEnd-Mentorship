@@ -131,6 +131,10 @@ main {
   color: black;
 }
 
+.content-table tbody:nth-child(odd) {
+  background-color: rgba(196, 196, 196, 0.315);
+}
+
 .content-table th {
   font-size: 0.9rem;
 }
@@ -138,6 +142,21 @@ main {
 .content-table th,
 .content-table td {
   padding: 0.8rem 1rem;
+}
+
+.content-table th:hover,
+.content-table td:hover {
+  background-color: #bdc3c7;
+}
+
+.content-table th:first-child,
+.content-table td:first-child {
+  border-radius: 8px 0px 0px 8px;
+}
+
+.content-table th:last-child,
+.content-table td:last-child {
+  border-radius: 0px 8px 8px 0px;
 }
 
 .content-table th:first-child {
@@ -203,7 +222,11 @@ input {
 
 .btn-primary:hover {
   background: #ce073f;
-  color: white;
   cursor: pointer;
+}
+
+.form-completed {
+  background-color: #225f20 !important;
+  padding: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
