@@ -10,9 +10,22 @@ const openModal = function () {
    closeHamBtn.classList.toggle("show-close-btn");
    modalHamburgerOpen.classList.toggle("modal-hamburger-open-hidden");
 };
-
 modalHamburgerBtn.addEventListener("click", openModal);
 
+const getJSON = function (url, errorMsg = "somthing went wrong") {
+   fetch(url).then((response) => {
+      if (!response.ok) throw new Error(`${errorMsg} - ${response.status}`);
+      return response.json();
+   });
+};
+const getCountryData = function () {
+   getJSON(
+      "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=fdf7cba70862ec4cdb5083aebdd424b7"
+   );
+};
+console.log(getCountryData());
+
+// chart js
 const ctx = document.getElementById("myChart").getContext("2d");
 const myChart = new Chart(ctx, {
    type: "line",
@@ -28,7 +41,7 @@ const myChart = new Chart(ctx, {
       datasets: [
          {
             label: "% humidity",
-            data: [12, 19, 3, 5, 2, 3],
+            data: [10, 19, 76, 5, 40, 3],
             backgroundColor: [
                "rgba(255, 99, 132, 0.2)",
                "rgba(54, 162, 235, 0.2)",
