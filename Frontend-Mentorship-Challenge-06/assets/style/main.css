@@ -101,7 +101,7 @@ body {
   border-radius: 1rem;
   -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.267), inset 0rem 0rem 20rem 0px rgba(177, 177, 177, 0.178);
           box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.267), inset 0rem 0rem 20rem 0px rgba(177, 177, 177, 0.178);
-  border: 1px solid rgba(128, 128, 128, 0.171);
+  border: 2px solid rgba(50, 58, 165, 0.171);
 }
 
 .main-container-sub {
@@ -340,8 +340,8 @@ i {
   padding: 1rem 3rem;
   font-size: 2rem;
   background: #99b1fa;
-  background: -webkit-gradient(linear, left top, right top, from(#99b1fa), to(#7c90fe));
-  background: linear-gradient(90deg, #99b1fa 0%, #7c90fe 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#9cb2f3), color-stop(90%, #546eff));
+  background: linear-gradient(90deg, #9cb2f3 0%, #546eff 90%);
 }
 
 #second-container .second-container__left-second-row div {
