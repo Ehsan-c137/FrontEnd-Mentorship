@@ -4,6 +4,7 @@ const modalHamburgerBtn = document.querySelector(".modal_hamburger");
 const modalHamburgerOpen = document.querySelector(".modal-hamburger-open");
 const closeHamBtn = document.querySelector(".close-ham-btn");
 const mainContainerSub = document.querySelector(".main-container-sub");
+const currentTime = document.querySelector(".current-time");
 
 const openModal = function () {
    mainContainerSub.classList.toggle("show-menu");
@@ -12,23 +13,25 @@ const openModal = function () {
 };
 modalHamburgerBtn.addEventListener("click", openModal);
 
-const getJSON = function (url, errorMsg = "somthing went wrong") {
-   fetch(url).then((response) => {
-      if (!response.ok) throw new Error(`${errorMsg} - ${response.status}`);
-      return response.json();
-   });
-};
-const getCountryData = function () {
-   getJSON(
-      "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=fdf7cba70862ec4cdb5083aebdd424b7"
-   );
-};
-console.log(getCountryData());
+const time = new Date();
+currentTime.textContent = `${time.getHours()}:${time.getMinutes()}`;
+const weekday = [
+   "Sunday",
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+];
+let day = weekday[time.getDay()];
+document.querySelector(".current-date").textContent = day;
 
 // chart js
 const ctx = document.getElementById("myChart").getContext("2d");
 const myChart = new Chart(ctx, {
    type: "line",
+
    data: {
       labels: [
          "saturday",
@@ -42,6 +45,7 @@ const myChart = new Chart(ctx, {
          {
             label: "% humidity",
             data: [10, 19, 76, 5, 40, 3],
+            Fill: true,
             backgroundColor: [
                "rgba(255, 99, 132, 0.2)",
                "rgba(54, 162, 235, 0.2)",
