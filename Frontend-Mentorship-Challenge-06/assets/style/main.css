@@ -70,8 +70,6 @@ picture {
 .first-container__overal-left img:hover {
   -webkit-animation: rotating 3s linear infinite;
   animation: rotating 3s linear infinite;
-  width: 6rem !important;
-  height: 6rem !important;
 }
 
 .first-container__overal-left img:active {
@@ -145,10 +143,10 @@ body {
 }
 
 #main-container {
+  padding: 3rem;
+  min-width: 56vw;
   overflow: hidden;
   background-color: white;
-  padding: 3rem;
-  min-width: 63vw;
   border-radius: 1rem;
   -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.267), inset 0rem 0rem 20rem 0px rgba(177, 177, 177, 0.178);
           box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.267), inset 0rem 0rem 20rem 0px rgba(177, 177, 177, 0.178);
@@ -157,8 +155,8 @@ body {
 
 .main-container-sub {
   position: relative;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .show-menu {
@@ -257,8 +255,6 @@ i {
       -ms-flex-align: end;
           align-items: flex-end;
   min-height: 30vh;
-  height: 50%;
-  width: 100%;
   padding: 3rem;
   margin: 2rem 0rem;
   background-image: url(../images/flower.jpg);
@@ -390,6 +386,13 @@ i {
 
 .chart-container {
   position: relative;
-  width: 60%;
+  margin-left: 1rem;
+  width: 33vw;
+  height: 33vh;
+  border: 1px solid rgba(128, 128, 128, 0.212);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.205);
+          box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.205);
 }
 /*# sourceMappingURL=main.css.map */
