@@ -1,6 +1,5 @@
 @import "_reset";
 @import "_mixins";
-@import "_animations";
 @import "_hamMenu";
 
 body {
@@ -69,7 +68,7 @@ i {
       border: none;
       cursor: pointer;
    }
-   form {
+   .search-input {
       &:focus-within {
          outline: 1px solid #474da3;
          padding: 1rem 2rem;

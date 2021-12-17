@@ -24,7 +24,7 @@ const weekday = [
    "Saturday",
 ];
 let day = weekday[time.getDay()];
-document.querySelector(".current-date").textContent = `${day}, `;
+document.querySelector(".current-date").textContent = `${day}`;
 
 // GET CURRENT WEATHER DATA
 let weather = {
@@ -34,12 +34,14 @@ let weather = {
          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
       )
          .then((response) => response.json())
-         .then((data) => this.displayWeather(data));
+         .then((data) => this.displayWeather(data))
+         .catch((err) => alert(`somthing went wrong. ${err}`));
    },
    displayWeather: function (data) {
       const { name } = data;
       const { icon, description } = data.weather[0];
       const { temp, humidity } = data.main;
+      const { sunrise, sunset } = data.sys;
 
       document.querySelector(".city-name").textContent = name;
       document.querySelector(
@@ -50,16 +52,24 @@ let weather = {
       ).textContent = `${day}, ${description}`;
       document.querySelector(".main-temp").textContent = `${Math.trunc(temp)}°`;
       document.querySelector(".humidity").textContent = `${humidity}%`;
+      document.querySelector(".sunset").textContent = `${time.getHours(
+         sunset
+      )}:${time.getMinutes(sunset)} pm`;
+      document.querySelector(".sunrise").textContent = `${time.getHours(
+         sunrise
+      )}:${time.getMinutes(sunrise)} am`;
+      console.log(sunrise, sunset);
+      // document.querySelector("#first-container").style.backgroundImage =
+      //    "url('https://source.unsplash.com/1600x900/?" + name + "')";
    },
-   // search: function () {
-   //    this.fetchWeather(document.querySelector(".search-bar").value);
-   // },
+   search: function () {
+      this.fetchWeather(document.querySelector(".search-bar").value);
+   },
 };
 document
    .querySelector(".search-input button")
    .addEventListener("click", function () {
-      // weather.search();
-      console.log(document.querySelector(".search-bar").value);
+      weather.search();
    });
 document
    .querySelector(".search-bar")

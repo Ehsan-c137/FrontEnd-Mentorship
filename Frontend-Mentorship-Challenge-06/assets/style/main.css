@@ -45,38 +45,6 @@ picture {
   display: block;
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotating {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.first-container__overal-left img:hover {
-  -webkit-animation: rotating 3s linear infinite;
-  animation: rotating 3s linear infinite;
-}
-
-.first-container__overal-left img:active {
-  -webkit-animation: none;
-          animation: none;
-}
-
 #hamburger {
   background-color: transparent;
   border: none;
@@ -221,7 +189,7 @@ i {
   cursor: pointer;
 }
 
-#header form {
+#header .search-input {
   -webkit-box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.205);
           box-shadow: 0rem 1rem 2rem 2px rgba(128, 128, 128, 0.205);
   border: 1px solid rgba(128, 128, 128, 0.096);
@@ -232,12 +200,12 @@ i {
   transition: 1.5s all;
 }
 
-#header form:focus-within {
+#header .search-input:focus-within {
   outline: 1px solid #474da3;
   padding: 1rem 2rem;
 }
 
-#header form input {
+#header .search-input input {
   background-color: transparent;
   border: none;
   outline: none;
