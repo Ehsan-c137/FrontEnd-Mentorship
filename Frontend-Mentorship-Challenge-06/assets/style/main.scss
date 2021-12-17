@@ -1,6 +1,7 @@
 @import "_reset";
 @import "_mixins";
 @import "_animations";
+@import "_hamMenu";
 
 body {
    background-color: #eef0ff;
@@ -28,18 +29,6 @@ body {
 
 .show-menu {
    transform: translate(-53%, 0%);
-}
-.modal-hamburger-open {
-   display: block;
-}
-.modal-hamburger-open-hidden {
-   display: none;
-}
-.close-ham-btn {
-   display: none;
-}
-.show-close-btn {
-   display: block;
 }
 
 #menu-container {
