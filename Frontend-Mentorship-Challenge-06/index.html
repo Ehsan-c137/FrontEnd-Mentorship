@@ -11,7 +11,7 @@
       <link rel="stylesheet" href="/assets/style/main.css" />
       <script defer src="./assets/JS/script.js"></script>
 
-      <title>Document</title>
+      <title>Weather app</title>
    </head>
    <body>
       <main>
@@ -20,7 +20,11 @@
                <h2>rayn</h2>
                <div class="header__search">
                   <form action="" class="search-input">
-                     <input type="text" placeholder="Enter city name.." />
+                     <input
+                        type="text"
+                        class="search-bar"
+                        placeholder="Enter city name.."
+                     />
                      <button><i class="fas fa-search-location"></i></button>
                   </form>
                   <button class="modal_hamburger">
@@ -48,12 +52,12 @@
                   <div id="first-container">
                      <div class="first-container__overal-left">
                         <img src="./assets/icons/01d.png" alt="" />
-                        <h1>13°</h1>
-                        <p>telluride, CO,USA</p>
+                        <h1 class="main-temp">13°</h1>
+                        <p class="city-name">telluride, CO,USA</p>
                      </div>
                      <div class="first-container__overal-right">
                         <h3 class="current-time">7:50 pm</h3>
-                        <p class="current-date">Sunset Time, Monday</p>
+                        <p class="current-date description">Monday</p>
                      </div>
                   </div>
                   <div id="second-container">
@@ -67,7 +71,7 @@
                                  />
                                  <div class="second-container__left-text">
                                     <p>humidity</p>
-                                    <h4>34%</h4>
+                                    <h4 class="humidity">34%</h4>
                                  </div>
                               </div>
                               <div class="second-container__UV">

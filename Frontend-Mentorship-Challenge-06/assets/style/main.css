@@ -233,7 +233,7 @@ i {
 }
 
 #header form:focus-within {
-  outline: 1px solid gray;
+  outline: 1px solid #474da3;
   padding: 1rem 2rem;
 }
 
