@@ -1,0 +1,39 @@
+// FOR IPHONE X
+@media screen and (max-width: 705px) {
+   body {
+      width: 100vw !important;
+      height: 100vh;
+   }
+   #second-container {
+      flex-direction: column;
+      z-index: 0;
+   }
+   #main-container {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      overflow: hidden;
+
+      background-color: white;
+      border-radius: none;
+      box-shadow: none;
+      border: none;
+   }
+
+   chart-container {
+      width: 100vw;
+   }
+   #header {
+      h2 {
+         display: none;
+      }
+      transform: translateY(10rem);
+      z-index: 10;
+      .search-input {
+         &:focus-within {
+            outline: 1px solid #474da3;
+            padding: none !important;
+         }
+      }
+   }
+}

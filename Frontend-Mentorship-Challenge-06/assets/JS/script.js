@@ -34,14 +34,17 @@ let weather = {
          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
       )
          .then((response) => response.json())
-         .then((data) => this.displayWeather(data))
-         .catch((err) => alert(`somthing went wrong. ${err}`));
+         .then((data) => {
+            this.displayWeather(data);
+         });
+      //.catch((err) => alert(`somthing went wrong. ${err}`));
    },
    displayWeather: function (data) {
       const { name } = data;
       const { icon, description } = data.weather[0];
       const { temp, humidity } = data.main;
       const { sunrise, sunset } = data.sys;
+      const { lon, lat } = data.coord;
 
       document.querySelector(".city-name").textContent = name;
       document.querySelector(
@@ -52,16 +55,39 @@ let weather = {
       ).textContent = `${day}, ${description}`;
       document.querySelector(".main-temp").textContent = `${Math.trunc(temp)}°`;
       document.querySelector(".humidity").textContent = `${humidity}%`;
-      document.querySelector(".sunset").textContent = `${time.getHours(
-         sunset
-      )}:${time.getMinutes(sunset)} pm`;
-      document.querySelector(".sunrise").textContent = `${time.getHours(
-         sunrise
-      )}:${time.getMinutes(sunrise)} am`;
-      console.log(sunrise, sunset);
+
+      // sunrise,sunset time
+      const unixTimestamp = [sunrise * 1000, sunset * 1000];
+      function sunMoves(unixtime) {
+         const sunTime = new Date(unixtime).toLocaleString("en-US", {
+            hour: "numeric",
+            minute: "numeric",
+         });
+         return sunTime;
+      }
+      const sunriseTime = sunMoves(unixTimestamp[0]);
+      const sunsetTime = sunMoves(unixTimestamp[1]);
+      document.querySelector(".sunset").textContent = sunsetTime;
+      document.querySelector(".sunrise").textContent = sunriseTime;
+
+      // uv index
+      fetch(
+         `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${this.apiKey}`
+      )
+         .then((response) => response.json())
+         .then((data) => showUV(data));
+      function showUV(data) {
+         const { uvi } = data.current;
+         document.querySelector(".uvindex").textContent = ` ${Math.trunc(
+            uvi
+         )} of 10`;
+      }
+      // change the background According to location
+      // need vpn for iran
       // document.querySelector("#first-container").style.backgroundImage =
       //    "url('https://source.unsplash.com/1600x900/?" + name + "')";
    },
+
    search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
    },
